@@ -1,0 +1,98 @@
+@import ../partials/_mixins
+@import ../partials/_vars
+@import ../partials/_fonts
+// zakladní nastavení
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    @include medium
+body,
+button
+    font-family: $body-font
+    font-size: $regular
+    background-color: grey
+
+img, 
+iframe
+    max-width: 100%
+    height: auto
+button
+    cursor: pointer
+    border: none
+    outline: none
+    &:hover
+        background-color: darken(#093CB5, 15%)
+ul,
+li
+    list-style: none
+a
+    text-decoration: none
+.container
+    max-width: 1920px
+    width: 96%
+    margin: 0 auto
+// Navigation bar
+nav 
+    display: flex
+    justify-content: space-between
+    background-color: #333
+    color: #fff
+    padding: 10px 0
+    height: 100px
+    width: 1860px
+    margin: 40px auto 
+
+nav .left
+    width: 869px
+    padding-left: 132px
+    display: flex
+    align-items: center
+    
+nav .right
+    padding-right: 132px
+    display: flex
+    align-items: center
+    ul
+        display: flex
+        height: 55px
+        align-items: center
+        gap: 30px
+
+nav .logo
+    margin-right: 50px
+
+nav ul 
+    list-style: none
+    margin: 0
+    padding: 0
+nav li 
+    display: inline-block
+
+nav .navmenu a
+    padding: 17px 24px
+    border-radius: 5%
+    align-items: center
+    &:hover
+       background-color: $second-color
+       cursor: pointer
+nav .navbtn button
+    padding: 14px 34px
+    border-radius: 5%
+    align-items: center
+    &:hover
+        background-color: $second-color
+        cursor: pointer
+        
+
+nav a
+    color: $text-color
+    text-decoration: none
+
+nav a:hover 
+    background-color: #555
+
+
+ 
+    
