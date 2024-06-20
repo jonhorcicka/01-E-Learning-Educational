@@ -8,11 +8,11 @@
     padding: 0
 body
     @include medium
+    background-color: grey
 body,
 button
     font-family: $body-font
     font-size: $regular
-    background-color: grey
 
 img, 
 iframe
@@ -22,8 +22,6 @@ button
     cursor: pointer
     border: none
     outline: none
-    &:hover
-        background-color: darken(#093CB5, 15%)
 ul,
 li
     list-style: none
@@ -72,26 +70,29 @@ nav li
 
 nav .navmenu a
     padding: 17px 24px
-    border-radius: 5%
+    border-radius: 8px
     align-items: center
     &:hover
        background-color: $second-color
        cursor: pointer
+       color: #fff    
+
 
 nav .navbtn button
     padding: 14px 34px
-    border-radius: 5%
+    border-radius: 8px
     align-items: center
     &:hover
         background-color: $second-color
-        cursor: pointer    
+        cursor: pointer
+        color: #fff    
 
 nav a
     color: $text-color
     text-decoration: none
 
-nav a:hover 
-    background-color: #555
+// nav a:hover 
+//     background-color: #555
 
 .container
     max-width: 1595px
@@ -103,22 +104,30 @@ nav a:hover
     flex-direction: column
     align-items: center
     margin: 100px auto
-    .notification
-        position: fixed
-        left: 505px
-        top: 210px
-    &--top
+    // .notification
+    //     position: absolute
+    //     left: 405px
+    //     top: 210px
+    &__top
         display: flex
         height: 100px
         width: 855px
         @include semiBold
         background-color: #fff
         border-radius: 11px
+        &::before
+            content: ""
+            width: 39px
+            height: 43px
+            position: relative
+            background: url("/icons/abstractLine.png")
+            top: -28px
+            left: -28px
         img
             object-position: 50% 50%
             width: 63px
             height: 63px
-            margin: 20px
+            margin: 20px 0 0 -25px
         h1
             font-size: $h1-font-size
             // padding: 14px 0
@@ -127,5 +136,32 @@ nav a:hover
         span
             color: $second-color
             font-size: $h1-font-size
+    &__medium
+        h2
+            font-size: $h2-font-size
+            padding-top: 20px
+        p
+            display: flex
+            font-size: $regular
+            padding-top: 20px
+            justify-content: center
+    &__bottom 
+        display: flex
+        gap: 12px
+        padding: 60px 0 100px
+        &--btn
+            button
+                @include medium
+                padding: 18px 24px
+                border-radius: 8px
+                background-color: $white-color 
+                &:hover
+                    padding: 18px 23px
+                    color: #fff
+                    background-color: $second-color
+                    @include semiBold
+            
+                  
+                 
  
     

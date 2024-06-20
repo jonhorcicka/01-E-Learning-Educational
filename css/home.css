@@ -35,13 +35,13 @@
 body {
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
+  background-color: grey;
 }
 
 body,
 button {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 18px;
-  background-color: grey;
 }
 
 img,
@@ -54,9 +54,6 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-}
-button:hover {
-  background-color: #05246c;
 }
 
 ul,
@@ -120,31 +117,29 @@ nav li {
 
 nav .navmenu a {
   padding: 17px 24px;
-  border-radius: 5%;
+  border-radius: 8px;
   align-items: center;
 }
 nav .navmenu a:hover {
   background-color: #FF9500;
   cursor: pointer;
+  color: #fff;
 }
 
 nav .navbtn button {
   padding: 14px 34px;
-  border-radius: 5%;
+  border-radius: 8px;
   align-items: center;
 }
 nav .navbtn button:hover {
   background-color: #FF9500;
   cursor: pointer;
+  color: #fff;
 }
 
 nav a {
   color: #4C4C4D;
   text-decoration: none;
-}
-
-nav a:hover {
-  background-color: #555;
 }
 
 .container {
@@ -159,12 +154,7 @@ nav a:hover {
   align-items: center;
   margin: 100px auto;
 }
-.hero .notification {
-  position: fixed;
-  left: 505px;
-  top: 210px;
-}
-.hero--top {
+.hero__top {
   display: flex;
   height: 100px;
   width: 855px;
@@ -173,17 +163,55 @@ nav a:hover {
   background-color: #fff;
   border-radius: 11px;
 }
-.hero--top img {
+.hero__top::before {
+  content: "";
+  width: 39px;
+  height: 43px;
+  position: relative;
+  background: url("/icons/abstractLine.png");
+  top: -28px;
+  left: -28px;
+}
+.hero__top img {
   object-position: 50% 50%;
   width: 63px;
   height: 63px;
-  margin: 20px;
+  margin: 20px 0 0 -25px;
 }
-.hero--top h1 {
+.hero__top h1 {
   font-size: 48px;
   align-self: center;
 }
-.hero--top span {
+.hero__top span {
   color: #FF9500;
   font-size: 48px;
+}
+.hero__medium h2 {
+  font-size: 38px;
+  padding-top: 20px;
+}
+.hero__medium p {
+  display: flex;
+  font-size: 18px;
+  padding-top: 20px;
+  justify-content: center;
+}
+.hero__bottom {
+  display: flex;
+  gap: 12px;
+  padding: 60px 0 100px;
+}
+.hero__bottom--btn button {
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  padding: 18px 24px;
+  border-radius: 8px;
+  background-color: #F1F1F3;
+}
+.hero__bottom--btn button:hover {
+  padding: 18px 23px;
+  color: #fff;
+  background-color: #FF9500;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
 }/*# sourceMappingURL=home.css.map */
