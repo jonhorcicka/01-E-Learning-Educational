@@ -77,14 +77,14 @@ nav .navmenu a
     &:hover
        background-color: $second-color
        cursor: pointer
+
 nav .navbtn button
     padding: 14px 34px
     border-radius: 5%
     align-items: center
     &:hover
         background-color: $second-color
-        cursor: pointer
-        
+        cursor: pointer    
 
 nav a
     color: $text-color
@@ -93,6 +93,39 @@ nav a
 nav a:hover 
     background-color: #555
 
-
+.container
+    max-width: 1595px
+    width: 96%
+    margin: 0 auto
+// Hero section
+.hero
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 100px auto
+    .notification
+        position: fixed
+        left: 505px
+        top: 210px
+    &--top
+        display: flex
+        height: 100px
+        width: 855px
+        @include semiBold
+        background-color: #fff
+        border-radius: 11px
+        img
+            object-position: 50% 50%
+            width: 63px
+            height: 63px
+            margin: 20px
+        h1
+            font-size: $h1-font-size
+            // padding: 14px 0
+            align-self: center
+  
+        span
+            color: $second-color
+            font-size: $h1-font-size
  
     
