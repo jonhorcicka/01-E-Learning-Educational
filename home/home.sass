@@ -39,7 +39,7 @@ nav
     color: #fff
     padding: 10px 0
     height: 100px
-    width: 1860px
+    max-width: 1860px
     margin: 40px auto 
 
 nav .left
@@ -103,11 +103,7 @@ nav a
     display: flex
     flex-direction: column
     align-items: center
-    margin: 100px auto
-    // .notification
-    //     position: absolute
-    //     left: 405px
-    //     top: 210px
+    margin: 100px auto 150px
     &__top
         display: flex
         height: 100px
@@ -130,7 +126,6 @@ nav a
             margin: 20px 0 0 -25px
         h1
             font-size: $h1-font-size
-            // padding: 14px 0
             align-self: center
   
         span
@@ -160,8 +155,79 @@ nav a
                     color: #fff
                     background-color: $second-color
                     @include semiBold
-            
-                  
-                 
+    &__sponsor
+        background-color: #FCFCFD
+        width: 100%
+        height: 154px
+        margin-bottom: 100px
+        align-content: center
+        border-radius: 12px
+        &--list
+            display: flex
+            justify-content: space-around
+
+// Benefits section
+.benefits
+    margin-bottom: 100px
+    &__text
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+        .textOne
+            max-width: 1177px
+            h1
+                font-size: $h1-font-size
+                @include semiBold
+                padding-bottom: 10px
+        .textTwo
+            display: flex
+            align-items: flex-end
+            p
+                padding: 18px 24px
+                background-color: $bg-btn-color
+                border-radius: 8px
+                &:hover
+                    background-color: $second-color
+                    color: $absolute-white
+                    cursor: pointer
+    &__tabs
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+        .card
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            justify-content: space-between
+            background-color: $absolute-white
+            padding: 50px
+            border-radius: 12px
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+            .number
+                font-size: $number-size
+                @include bold
+                display: flex
+                justify-content: flex-end
+                margin-bottom: 50px
+            h3
+                @include semiBold
+                font-size: $semi-bold
+                padding-bottom: 14px
+            .text
+                padding-bottom: 50px
+            .vector              
+                height: 74px
+                padding: 20px
+                background-color: $bg-color
+                border-radius: 8px
+                &:hover
+                    background-color: #000
+                    cursor: pointer
+                    
+
+
+        
+    
+                         
  
     

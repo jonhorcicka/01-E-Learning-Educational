@@ -78,7 +78,7 @@ nav {
   color: #fff;
   padding: 10px 0;
   height: 100px;
-  width: 1860px;
+  max-width: 1860px;
   margin: 40px auto;
 }
 
@@ -152,7 +152,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px auto;
+  margin: 100px auto 150px;
 }
 .hero__top {
   display: flex;
@@ -214,4 +214,90 @@ nav a {
   background-color: #FF9500;
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
+}
+.hero__sponsor {
+  background-color: #FCFCFD;
+  width: 100%;
+  height: 154px;
+  margin-bottom: 100px;
+  align-content: center;
+  border-radius: 12px;
+}
+.hero__sponsor--list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits {
+  margin-bottom: 100px;
+}
+.benefits__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.benefits__text .textOne {
+  max-width: 1177px;
+}
+.benefits__text .textOne h1 {
+  font-size: 48px;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.benefits__text .textTwo {
+  display: flex;
+  align-items: flex-end;
+}
+.benefits__text .textTwo p {
+  padding: 18px 24px;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+}
+.benefits__text .textTwo p:hover {
+  background-color: #FF9500;
+  color: #fff;
+  cursor: pointer;
+}
+.benefits__tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.benefits__tabs .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.benefits__tabs .card .number {
+  font-size: 80px;
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.benefits__tabs .card h3 {
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 14px;
+}
+.benefits__tabs .card .text {
+  padding-bottom: 50px;
+}
+.benefits__tabs .card .vector {
+  height: 74px;
+  padding: 20px;
+  background-color: #F7F7F8;
+  border-radius: 8px;
+}
+.benefits__tabs .card .vector:hover {
+  background-color: #000;
+  cursor: pointer;
 }/*# sourceMappingURL=home.css.map */
