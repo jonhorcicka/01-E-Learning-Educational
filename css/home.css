@@ -300,4 +300,90 @@ nav a {
 .benefits__tabs .card .vector:hover {
   background-color: #000;
   cursor: pointer;
+}
+
+.courses {
+  margin-bottom: 100px;
+}
+.courses__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.courses__text .textOne {
+  max-width: 1177px;
+}
+.courses__text .textOne h1 {
+  font-size: 48px;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.courses__text .textTwo {
+  display: flex;
+  align-items: flex-end;
+}
+.courses__text .textTwo p {
+  padding: 18px 24px;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+}
+.courses__text .textTwo p:hover {
+  background-color: #FF9500;
+  color: #fff;
+  cursor: pointer;
+}
+.courses__tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.courses__tabs .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.courses__tabs .card__advance {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.courses__tabs .card__advance .week {
+  display: flex;
+  gap: 10px;
+}
+.courses__tabs .card__advance .week p {
+  padding: 10px 16px;
+  background-color: #F7F7F8;
+  border-radius: 8px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+}
+.courses__tabs .card__advance .author {
+  align-self: center;
+}
+.courses__tabs .card h3 {
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.courses__tabs .card .text {
+  margin: 14px 0 30px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+}
+.courses__tabs .card .btn {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.courses__tabs .card .btn button {
+  height: 63px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #F1F1F3;
 }/*# sourceMappingURL=home.css.map */
