@@ -393,7 +393,7 @@ nav a {
 }
 
 .testimonials {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .testimonials__text {
   display: flex;
@@ -458,4 +458,57 @@ nav a {
   cursor: pointer;
   background-color: #FF9500;
   color: #fff;
+}
+
+.pricing {
+  margin-bottom: 150px;
+}
+.pricing__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.pricing__text .textOne {
+  max-width: 1177px;
+}
+.pricing__text .textOne h1 {
+  font-size: 48px;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.pricing__text .textTwo {
+  display: flex;
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+  max-width: 272px;
+  max-height: 79px;
+  padding: 12px;
+}
+.pricing__text .textTwo p {
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  padding: 14px 30px;
+  border-radius: 8px;
+}
+.pricing__text .textTwo p:hover {
+  background-color: #FF9500;
+  color: #fff;
+  cursor: pointer;
+}
+.pricing__tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.pricing__tabs .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #fff;
+  padding: 50px 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=home.css.map */

@@ -223,6 +223,8 @@ nav a
                 &:hover
                     background-color: #000
                     cursor: pointer
+
+// Courses section
 .courses
     margin-bottom: 100px
     &__text
@@ -293,8 +295,9 @@ nav a
                         color: $absolute-white
                         cursor: pointer
 
+// testimonials section
 .testimonials
-    margin-bottom: 100px
+    margin-bottom: 150px
     &__text
         display: flex
         justify-content: space-between
@@ -346,6 +349,50 @@ nav a
                         cursor: pointer
                         background-color: $second-color
                         color: $absolute-white
+
+// Pricing section
+.pricing
+    margin-bottom: 150px
+    &__text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 80px
+        .textOne
+            max-width: 1177px
+            h1
+                font-size: $h1-font-size
+                @include semiBold
+                padding-bottom: 10px
+        .textTwo
+            display: flex
+            align-items: center
+            background-color: $bg-btn-color
+            border-radius: 8px
+            max-width: 272px
+            max-height: 79px
+            padding: 12px
+            p
+                @include medium
+                padding: 14px 30px
+                border-radius: 8px
+                &:hover
+                    background-color: $second-color
+                    color: $absolute-white
+                    cursor: pointer
+    &__tabs
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+        .card
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            // justify-content: space-between
+            background-color: $absolute-white
+            padding: 50px 50px 30px
+            border-radius: 12px
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
                               
 
 
