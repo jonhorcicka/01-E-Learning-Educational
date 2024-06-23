@@ -379,11 +379,83 @@ nav a {
 .courses__tabs .card .btn {
   display: inline-flex;
   width: 100%;
-  margin-bottom: 50px;
 }
 .courses__tabs .card .btn button {
   height: 63px;
   width: 100%;
   border-radius: 8px;
   background-color: #F1F1F3;
+}
+.courses__tabs .card .btn button:hover {
+  background-color: #FF9500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.testimonials {
+  margin-bottom: 100px;
+}
+.testimonials__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.testimonials__text .textOne {
+  max-width: 1177px;
+}
+.testimonials__text .textOne h1 {
+  font-size: 48px;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.testimonials__text .textTwo {
+  display: flex;
+  align-items: flex-end;
+}
+.testimonials__text .textTwo p {
+  padding: 18px 24px;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+}
+.testimonials__text .textTwo p:hover {
+  background-color: #FF9500;
+  color: #fff;
+  cursor: pointer;
+}
+.testimonials__tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.testimonials__tabs .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #fff;
+  padding: 50px 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.testimonials__tabs .card .text {
+  margin-bottom: 50px;
+}
+.testimonials__tabs .card .author {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.testimonials__tabs .card .author .person {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.testimonials__tabs .card .author .moreStory {
+  padding: 18px 24px;
+  background-color: #F1F1F3;
+}
+.testimonials__tabs .card .author .moreStory:hover {
+  cursor: pointer;
+  background-color: #FF9500;
+  color: #fff;
 }/*# sourceMappingURL=home.css.map */

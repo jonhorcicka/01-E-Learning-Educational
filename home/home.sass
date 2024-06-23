@@ -283,12 +283,70 @@ nav a
             .btn
                 display: inline-flex
                 width: 100%
-                margin-bottom: 50px
                 button
                     height: 63px
                     width: 100%
                     border-radius: 8px
                     background-color: $white-color
+                    &:hover
+                        background-color: $second-color
+                        color: $absolute-white
+                        cursor: pointer
+
+.testimonials
+    margin-bottom: 100px
+    &__text
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+        .textOne
+            max-width: 1177px
+            h1
+                font-size: $h1-font-size
+                @include semiBold
+                padding-bottom: 10px
+        .textTwo
+            display: flex
+            align-items: flex-end
+            p
+                padding: 18px 24px
+                background-color: $bg-btn-color
+                border-radius: 8px
+                &:hover
+                    background-color: $second-color
+                    color: $absolute-white
+                    cursor: pointer
+    &__tabs
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+        .card
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            // justify-content: space-between
+            background-color: $absolute-white
+            padding: 50px 50px 30px
+            border-radius: 12px
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+            .text
+                margin-bottom: 50px
+            .author
+                display: flex
+                justify-content: space-between
+                width: 100%
+                .person
+                    display: flex
+                    gap: 15px
+                    align-items: center
+                .moreStory
+                    padding: 18px 24px
+                    background-color: $white-color
+                    &:hover
+                        cursor: pointer
+                        background-color: $second-color
+                        color: $absolute-white
+                              
 
 
                 
