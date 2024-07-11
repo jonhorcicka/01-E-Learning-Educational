@@ -345,6 +345,7 @@ nav a
                 .moreStory
                     padding: 18px 24px
                     background-color: $white-color
+                    border-radius: 8px
                     &:hover
                         cursor: pointer
                         background-color: $second-color
@@ -383,16 +384,95 @@ nav a
     &__tabs
         display: grid
         grid-template-columns: repeat(2, 1fr)
-        grid-gap: 20px
+        grid-gap: 30px
+        background-color: $absolute-white
+        padding: 80px
+        border-radius: 12px
         .card
             display: flex
             flex-direction: column
-            align-items: flex-end
-            // justify-content: space-between
-            background-color: $absolute-white
-            padding: 50px 50px 30px
+            align-items: center
+            background-color: $bg-btn-color
+            padding: 50px 30px
             border-radius: 12px
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+            .plan
+                background-color: $weak-bg-color
+                max-width: 644px
+                width: 100%
+                padding: 12px 0
+                border-radius: 6px
+                margin-bottom: 50px
+                font-size: 22px
+                @include medium
+                display: flex
+                justify-content: center
+            .price
+                margin-bottom: 50px
+                color: $text-color
+                font-size: 20px
+                @include medium
+                span
+                    @include semiBold
+                    font-size: $number-size
+            .list
+                width: 100%
+                background-color: $absolute-white
+                display: flex
+                flex-direction: column
+                gap: 20px
+                border-radius: 8px 8px 0 0
+                .name
+                    display: flex
+                    justify-content: center
+                    padding: 40px 0 30px
+                    @include medium
+                    font-size: 20px
+                &__main
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    gap: 12px
+                    border: 1px solid $white-color
+                    padding: 14px 0 14px 14px
+                    border-radius: 8px
+                    margin: 0 30px 
+                    @include regular
+                    font-size: $regular
+                    &:last-child
+                        margin-bottom: 40px
+                    img
+                        background-color: $bg-icon-color
+                        padding: 6px
+                        border-radius: 6px
+                    &-nope
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        gap: 12px
+                        margin: 0 30px
+                        border: 1px solid $white-color
+                        padding: 14px 0px 14px 14px
+                        border-radius: 8px
+                        &:last-child
+                            margin-bottom: 40px
+                        img
+                            background-color: $white-color
+                            border-radius: 6px
+        button
+            width: 100%
+            background-color: $white-color
+            padding: 20px 0
+            border-radius: 0 0 8px 8px
+            color: $main-color
+            @include semiBold
+            &:hover
+                color: $absolute-white
+                background-color: $second-color
+            
+
+
+
                               
 
 
