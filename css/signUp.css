@@ -153,6 +153,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 829px;
 }
 .signUp .left__one h2 {
@@ -225,6 +226,7 @@ nav a {
   gap: 50px;
   background-color: #fff;
   padding: 50px;
+  border-radius: 12px;
 }
 .signUp .right__text {
   display: flex;
@@ -248,14 +250,14 @@ nav a {
   display: flex;
   flex-direction: column;
 }
-.signUp .right__form form label {
+.signUp .right__form form .nameText {
   margin-bottom: 14px;
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #262626;
 }
-.signUp .right__form form input {
+.signUp .right__form form .namePole {
   margin-bottom: 24px;
   padding: 24px;
   border-radius: 10px;
@@ -267,16 +269,91 @@ nav a {
   cursor: pointer;
   position: relative;
 }
-.signUp .right__form form .checkbox input {
+.signUp .right__form form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 460px;
+  margin-bottom: 20px;
+}
+.signUp .right__form form .checkbox .check {
   width: 30px;
   height: 30px;
-  border-radius: 4px;
+}
+.signUp .right__form form .checkbox .checkText {
+  display: flex;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #59595A;
+}
+.signUp .right__form form .checkbox .checkText a {
+  color: #59595A;
+  text-decoration: underline;
+}
+.signUp .right__form form .btnSignUp {
+  padding: 18px 0;
+  border-radius: 8px;
+  color: #262626;
+  background-color: #F1F1F3;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.signUp .right__form form .btnSignUp:hover {
+  color: #F1F1F3;
+  background-color: #FF9500;
+}
+.signUp .right__form .bars {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.signUp .right__form .bars__before, .signUp .right__form .bars__after {
+  width: 45%;
+  border: 1px solid #e4e4e7;
+}
+.signUp .right__form .bars__content {
+  color: #98989a;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.signUp .right__form .btnGoogle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.signUp .right__form .btnGoogle:hover {
+  color: #F1F1F3;
+  background-color: #FF9500;
+}
+.signUp .right__form p, .signUp .right__form a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.signUp .right__form p a, .signUp .right__form a a {
+  text-decoration: underline;
+  color: #4C4C4D;
 }
 
 footer {
   background-color: #fff;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 150px auto;
 }
 footer .up {
   padding: 100px 162px 0 162px;
