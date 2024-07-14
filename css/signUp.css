@@ -66,14 +66,14 @@ a {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1589px;
   width: 96%;
   margin: 0 auto;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #333;
   color: #fff;
   padding: 10px 0;
@@ -143,14 +143,140 @@ nav a {
 }
 
 .signUp {
+  max-width: 1589px;
   display: flex;
+  margin: 0 auto;
+  gap: 100px;
+  max-height: 997px;
 }
 .signUp .left {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 829px;
+}
+.signUp .left__one h2 {
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  margin-bottom: 6px;
+}
+.signUp .left__one p {
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+.signUp .left__two {
+  margin-bottom: 30px;
+}
+.signUp .left__two-text {
+  display: flex;
+  margin: 0 auto;
+}
+.signUp .left__two-text p {
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4C4C4D;
+  background-color: #fff;
+  padding: 50px;
+}
+.signUp .left__two-authors {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background-color: #FCFCFD;
+}
+.signUp .left__two-authors p {
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.signUp .left__two-authors p img {
+  border-radius: 8px;
+}
+.signUp .left__two-authors .btn {
+  background-color: #F7F7F8;
+  padding: 18px 24px;
+  border-radius: 8px;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+}
+.signUp .left__arrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 202px;
+}
+.signUp .left__arrows img {
+  padding: 14px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.signUp .right {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #fff;
+  padding: 50px;
+}
+.signUp .right__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signUp .right__text h1 {
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #262626;
+  margin-bottom: 12px;
+}
+.signUp .right__text p {
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4C4C4D;
+}
+.signUp .right__form form {
+  display: flex;
+  flex-direction: column;
+}
+.signUp .right__form form label {
+  margin-bottom: 14px;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #262626;
+}
+.signUp .right__form form input {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #F1F1F3;
+}
+.signUp .right__form form .psw {
+  background: url("../icons/eyePassword.svg") no-repeat;
+  background-position: 95% 50%;
+  cursor: pointer;
+  position: relative;
+}
+.signUp .right__form form .checkbox input {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
 }
 
 footer {
   background-color: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 footer .up {
   padding: 100px 162px 0 162px;
@@ -213,7 +339,6 @@ footer .up .right .socials li img:hover {
 }
 footer .space {
   height: 1px;
-  width: 1595px;
   margin: 50px auto;
   background-color: #F1F1F3;
   display: flex;

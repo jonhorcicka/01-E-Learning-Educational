@@ -34,23 +34,122 @@
                     <h2>Students Testimonials</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                 </div>
-                <div class="left__text">
-                    The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
-                </div>
-                <div class="left__authors">
-                    <p><img src="../img/sarah.jpeg" alt="Sarah L">Sarah L</p>
-                    <button>Read More</button>
+                <div class="left__two">
+                    <div class="left__two-text">
+                        <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                    </div>
+                    <div class="left__two-authors">
+                        <p><img src="../img/sarah.jpeg" alt="Sarah L">Sarah L</p>
+                        <button class="btn">Read More</button>
+                    </div>
                 </div>
                 <div class="left__arrows">
-
+                    <img src="../icons/vectorLeftSu.svg" alt="Vector Left">
+                    <img src="../icons/vectorRightSu.svg" alt="Vector Right">
                 </div>
             </div>
             <aside class="right">
+                <div class="right__text">
+                    <h1>Sign Up</h1>
+                    <p>Create an account to unlock exclusive features.</p>
+                </div>
+                <div class="right__form">
+                    <form>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your Name">
+                
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your Email">
+                
+                        <label for="password">Password</label>
+                        
+                        <input class="psw" type="password" id="password" name="password" required placeholder="Enter your Password"> 
+                            
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">I agree with<a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</label>
+                        </div>
+                
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div class="bars">
+                        <div class="bars__before">
+                        </div>
+                        <span class="bars__content">
+                            <h3>Or</h3>
+                        </span>
+                        <div class="bars__after">
+
+                        </div>
+                    </div>
+                    <button type="submit"><img src="../icons/google.svg" alt="Google email">Sign Up with Google</button>
+
+                    <p>Already have an account? <a href="#">Login <img src="../icons/vectorUpRight.svg" alt="Vector"></a></p>
+                </div>
 
             </aside>
 
         </section>
-
     </main>
+    <footer>
+        <div class="up">
+            <div class="left">
+                <a class="logo" href="#home.html"><img class="webLogo" src="../icons/logoBC.svg" alt="Website Logo"></a>
+                <ul>
+                    <li>
+                        <img src="../socials/mail.svg" alt="e-mail">
+                        <p>hello@skillbridge.com</p>
+                    </li>
+                    <li>
+                        <img src="../socials/phone.svg" alt="phone">
+                        <p>+91 91813 23 2309</p>
+                    </li>
+                    <li>
+                        <img src="../socials/map.svg" alt="navigation">
+                        <p>Somewhere in the World</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="home">
+                    <ul>
+                        <li>Home</li>
+                        <li>Benefits</li>
+                        <li>Our Courses</li>
+                        <li>Our Testimonials</li>
+                        <li>Our FAQ</li>
+                    </ul>
+                </div>
+                <div class="aboutUs">
+                    <ul>
+                        <li>About Us</li>
+                        <li>Company</li>
+                        <li>Achievements</li>
+                        <li>Our Goals</li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li>Social Profiles</li>
+                        <li>
+                            <a href="#">
+                                <img src="../socials/fb.svg" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="../socials/tt.svg" alt="twitter">
+                            </a>
+                            <a href="#">
+                                <img src="../socials/linkedIn.svg" alt="linkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="down">
+            <p>&copy;2023 Skillbridge. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

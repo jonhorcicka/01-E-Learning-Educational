@@ -28,19 +28,19 @@ li
 a
     text-decoration: none
 .container
-    max-width: 1920px
+    max-width: 1589px
     width: 96%
     margin: 0 auto
 // Navigation bar
 nav 
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     background-color: #333
     color: #fff
     padding: 10px 0
     height: 100px
     max-width: 1860px
-    margin: 40px auto 
+    margin: 40px auto
 
 nav .left
     width: 869px
@@ -92,14 +92,125 @@ nav a
     text-decoration: none
 
 .signUp
+    max-width: 1589px
     display: flex
+    margin: 0 auto
+    gap: 100px
+    max-height: 997px
     .left
-        width: 50%
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 829px
+        &__one
+            h2
+                @include medium
+                font-size: $h2-font-size
+                margin-bottom: 6px
+            p
+                @include regular
+                font-size: $regular
+                margin-bottom: 80px
+        &__two
+            margin-bottom: 30px
+            &-text
+                display: flex
+                margin: 0 auto
+                p
+                    @include regular
+                    font-size: $regular
+                    color: $text-color
+                    background-color: $absolute-white
+                    padding: 50px
+            &-authors
+                display: flex
+                justify-content: space-between
+                padding: 30px 50px
+                background-color: $bg-btn-color
+                p
+                    @include semiBold
+                    font-size: $regular
+                    display: flex
+                    align-items: center
+                    gap: 15px
+                    img
+                        border-radius: 8px
+                .btn
+                    background-color: $bg-color
+                    padding: 18px 24px
+                    border-radius: 8px
+                    @include medium
+        &__arrows
+            display: flex
+            justify-content: flex-end
+            gap: 15px
+            width: 100%
+            margin-bottom: 202px
+            img
+                padding: 14px
+                background-color: $absolute-white
+                border-radius: 8px
+
+    .right
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        gap: 50px
+        background-color: $absolute-white
+        padding: 50px
+        &__text
+            display: flex
+            flex-direction: column
+            align-items: center
+            h1
+                @include semiBold
+                font-size: $h1-font-size
+                color: $main-color
+                margin-bottom: 12px
+            p
+                @include regular
+                font-size: $regular
+                color: $text-color
+        &__form
+            form
+                display: flex
+                flex-direction: column
+                label
+                    margin-bottom: 14px
+                    @include medium
+                    font-size: $regular
+                    color: $main-color
+                input
+                    margin-bottom: 24px
+                    padding: 24px
+                    border-radius: 10px
+                    border: 1px solid $white-color
+                .psw
+                    background: url("../icons/eyePassword.svg") no-repeat
+                    background-position: 95% 50%
+                    cursor: pointer
+                    position: relative
+                    // top: 50%
+                    // left: 5px
+                .checkbox
+                    input
+                        width: 30px
+                        height: 30px
+                        border-radius: 4px
+                  
+                
+                    
+
+
+        
+                    
 
 
 // Footer section
 footer
     background-color: $absolute-white
+    max-width: 1920px
+    margin: 0 auto
     .up
         padding: 100px 162px 0 162px
         background-color: $absolute-white
@@ -150,7 +261,6 @@ footer
                             color: $absolute-white
     .space
         height: 1px
-        width: 1595px
         margin: 50px auto
         background-color: $white-color
         display: flex
