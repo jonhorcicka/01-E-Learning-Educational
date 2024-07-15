@@ -8,7 +8,7 @@
     padding: 0
 body
     @include medium
-    background-color: grey
+    background-color: $white-color
 body,
 button
     font-family: $body-font
@@ -34,29 +34,30 @@ a
 // Navigation bar
 nav 
     display: flex
-    justify-content: space-around
-    background-color: #333
+    justify-content: space-between
+    background-color: $white-color
     color: #fff
     padding: 10px 0
     height: 100px
-    max-width: 1860px
+    max-width: 1589px
+    width: 96%
     margin: 40px auto
 
 nav .left
     width: 869px
-    padding-left: 132px
+    // padding-left: 132px
     display: flex
     align-items: center
     
 nav .right
-    padding-right: 132px
+    // padding-right: 132px
     display: flex
     align-items: center
     ul
         display: flex
         height: 55px
         align-items: center
-        gap: 30px
+        // gap: 30px
 
 nav .logo
     margin-right: 50px
@@ -274,7 +275,7 @@ nav a
 footer
     background-color: $absolute-white
     max-width: 1920px
-    margin: 150px auto
+    margin: 150px auto 0
     .up
         padding: 100px 162px 0 162px
         background-color: $absolute-white

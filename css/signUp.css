@@ -35,7 +35,7 @@
 body {
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
-  background-color: grey;
+  background-color: #F1F1F3;
 }
 
 body,
@@ -73,24 +73,23 @@ a {
 
 nav {
   display: flex;
-  justify-content: space-around;
-  background-color: #333;
+  justify-content: space-between;
+  background-color: #F1F1F3;
   color: #fff;
   padding: 10px 0;
   height: 100px;
-  max-width: 1860px;
+  max-width: 1589px;
+  width: 96%;
   margin: 40px auto;
 }
 
 nav .left {
   width: 869px;
-  padding-left: 132px;
   display: flex;
   align-items: center;
 }
 
 nav .right {
-  padding-right: 132px;
   display: flex;
   align-items: center;
 }
@@ -98,7 +97,6 @@ nav .right ul {
   display: flex;
   height: 55px;
   align-items: center;
-  gap: 30px;
 }
 
 nav .logo {
@@ -353,7 +351,7 @@ nav a {
 footer {
   background-color: #fff;
   max-width: 1920px;
-  margin: 150px auto;
+  margin: 150px auto 0;
 }
 footer .up {
   padding: 100px 162px 0 162px;
