@@ -280,6 +280,7 @@ nav a {
 }
 .signUp .right__form form .checkbox .checkText {
   display: flex;
+  gap: 8px;
   font-family: "Be Vietnam Pro Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
