@@ -228,7 +228,7 @@ nav a {
   background-color: #F1F1F3;
 }
 .contact__card--form .person-msg .msgPole::placeholder {
-  text-align: center;
+  text-align: start;
 }
 .contact__card--form .btnmsg {
   width: 28%;
@@ -259,15 +259,75 @@ nav a {
   background-color: #FCFCFD;
   border-radius: 8px;
 }
-.contact__card--contact .icons img {
-  padding: 14px;
-  background-color: #F1F1F3;
+.contact__card--contact .icons .icon {
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+.contact__card--contact .icons .mail {
+  background: #F1F1F3 url("../socials/mail.svg") no-repeat;
+  background-position: center;
   border-radius: 8px;
 }
-.contact__card--contact .icons img:hover {
-  background-color: #FF9500;
+.contact__card--contact .icons .mail:hover {
+  background: #FF9500 url("../socials/mailW.svg") no-repeat;
+  background-position: center;
 }
-.contact__card--contact .icons p {
+.contact__card--contact .icons .phone {
+  background: #F1F1F3 url("../socials/phone.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.contact__card--contact .icons .phone:hover {
+  background: #FF9500 url("../socials/phoneW.svg") no-repeat;
+  background-position: center;
+}
+.contact__card--contact .icons .map {
+  background: #F1F1F3 url("../socials/map.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.contact__card--contact .icons .map:hover {
+  background: #FF9500 url("../socials/mapW.svg") no-repeat;
+  background-position: center;
+}
+.contact__card--contact .socials {
+  display: flex;
+  gap: 14px;
+}
+.contact__card--contact .socials .icon {
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+.contact__card--contact .socials .fb {
+  background: #F1F1F3 url("../socials/fb.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.contact__card--contact .socials .fb:hover {
+  background: #FF9500 url("../socials/fbW.svg") no-repeat;
+  background-position: center;
+}
+.contact__card--contact .socials .tt {
+  background: #F1F1F3 url("../socials/tt.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.contact__card--contact .socials .tt:hover {
+  background: #FF9500 url("../socials/ttW.svg") no-repeat;
+  background-position: center;
+}
+.contact__card--contact .socials .linkedIn {
+  background: #F1F1F3 url("../socials/linkedIn.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.contact__card--contact .socials .linkedIn:hover {
+  background: #FF9500 url("../socials/linkedInW.svg") no-repeat;
+  background-position: center;
+}
+.contact__card--contact .socials p {
   color: #4C4C4D;
   font-family: "Be Vietnam Pro Regular", sans-serif;
   font-weight: 400;
