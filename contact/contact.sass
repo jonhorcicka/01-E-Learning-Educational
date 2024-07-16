@@ -1,0 +1,274 @@
+@import ../partials/_mixins
+@import ../partials/_vars
+@import ../partials/_fonts
+// zakladní nastavení
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    @include medium
+    background-color: $white-color
+body,
+button
+    font-family: $body-font
+    font-size: $regular
+
+img, 
+iframe
+    max-width: 100%
+    height: auto
+button
+    cursor: pointer
+    border: none
+    outline: none
+ul,
+li
+    list-style: none
+a
+    text-decoration: none
+.container
+    max-width: 1596px
+    width: 96%
+    margin: 0 auto
+// Navigation bar
+nav 
+    display: flex
+    justify-content: space-between
+    background-color: $white-color
+    color: #fff
+    padding: 10px 0
+    height: 100px
+    max-width: 1589px
+    width: 96%
+    margin: 40px auto
+
+nav .left
+    width: 869px
+    // padding-left: 132px
+    display: flex
+    align-items: center
+    
+nav .right
+    // padding-right: 132px
+    display: flex
+    align-items: center
+    ul
+        display: flex
+        height: 55px
+        align-items: center
+        // gap: 30px
+
+nav .logo
+    margin-right: 50px
+
+nav ul 
+    list-style: none
+    margin: 0
+    padding: 0
+nav li 
+    display: inline-block
+
+nav .navmenu a
+    padding: 17px 24px
+    border-radius: 8px
+    align-items: center
+    &:hover
+       background-color: $second-color
+       cursor: pointer
+       color: #fff    
+
+
+nav .navbtn button
+    padding: 14px 34px
+    border-radius: 8px
+    align-items: center
+    background-color: $white-color
+    &:hover
+        background-color: $second-color
+        cursor: pointer
+        color: #fff    
+
+nav a
+    color: $text-color
+    text-decoration: none
+
+// main section
+.contact
+    display: flex
+    flex-direction: column
+    &__text
+        display: flex
+        gap: 100px
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 100px
+        h1
+            display: flex
+            width: 50%
+            align-items: center
+        p
+            width: 50%
+            padding-right: 6.94438vw
+            color: $weak-text-color
+            @include regular
+            font-size: $regular
+    &__card
+        background-color: $absolute-white
+        border: 1px solid $white-color
+        border-radius: 12px
+        display: flex
+        &--form
+            display: flex
+            flex-direction: column
+            padding: 80px
+            border: 1px solid $white-color
+            max-width: 916px
+            width: 100%
+            .person-contact
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 30px
+                margin-bottom: 30px
+                .nameText
+                    display: flex
+                    flex-direction: column
+                    margin-bottom: 16px
+                    @include medium
+                    font-size: $regular
+                    color: $main-color
+                .namePole
+                    width: 100%
+                    padding: 24px 20px
+                    border-radius: 8px
+                    border: 1px solid $white-color
+                    background-color: $white-color
+            .person-msg
+                display: flex
+                flex-direction: column
+                gap: 50px
+
+                .nameText
+                    display: flex
+                    flex-direction: column
+                    margin-bottom: 16px
+                    @include medium
+                    font-size: $regular
+                    color: $main-color
+                .namePole
+                    width: 100%
+                    padding: 24px 20px
+                    border-radius: 8px
+                    border: 1px solid $white-color
+                    background-color: $white-color
+                .msgPole
+                    height: 170px
+                    margin-bottom: 50px
+                    background-color: $white-color
+                    &::placeholder
+                        text-align: center
+            .btnmsg
+                width: 28%
+                padding: 18px 24px
+                background-color: $white-color
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                align-self: center
+                &:hover
+                    background-color: $second-color
+                    color: $absolute-white
+        &--contact
+            padding: 80px
+            display: flex
+            flex-direction: column
+            gap: 50px
+            .icons
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 20px
+                padding: 30px
+                background-color: $bg-btn-color
+                border-radius: 8px
+                img
+                    padding: 14px
+                    background-color: $white-color
+                    border-radius: 8px
+                    &:hover
+                        background-color: $second-color
+
+                p
+                    color: $text-color
+                    @include regular
+                         
+
+
+
+// Footer section
+footer
+    background-color: $absolute-white
+    margin: 150px auto 0
+    .up
+        max-width: 1590px
+        width: 96%
+        padding: 100px 0 0 0
+        background-color: $absolute-white
+        display: flex
+        margin: 0 auto
+        .left
+            width: 50%
+            .webLogo
+                margin-bottom: 40px
+            ul
+                display: flex
+                flex-direction: column
+                gap: 20px
+                @include regular
+                font-size: $regular
+                li
+                    display: flex
+                    gap: 6px
+                    align-items: center
+        .right
+            width: 50%
+            display: flex
+            gap: 30px
+            justify-content: space-around
+            .home, .aboutUs, .socials
+                ul
+                    display: flex
+                    flex-direction: column
+                    gap: 8px
+                    @include regular
+                    font-size: $regular
+                    color: $weak-text-color
+                    li
+                        &:first-child
+                            @include semiBold
+                            font-size: 20px
+                            color: $main-color
+                            margin-bottom: 14px
+            .socials
+                li
+                    display: flex
+                    gap: 14px
+                    img
+                        padding: 14px
+                        background-color: $bg-color
+                        border-radius: 8px
+                        &:hover
+                            background-color: $second-color
+                            color: $absolute-white
+    .space
+        height: 1px
+        margin: 50px auto
+        background-color: $white-color
+        display: flex
+        justify-content: center
+    .down
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 30px
