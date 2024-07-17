@@ -1,0 +1,174 @@
+@import ../partials/_mixins
+@import ../partials/_vars
+@import ../partials/_fonts
+// zakladní nastavení
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    @include medium
+    background-color: $white-color
+body,
+button
+    font-family: $body-font
+    font-size: $regular
+
+img, 
+iframe
+    max-width: 100%
+    height: auto
+button
+    cursor: pointer
+    border: none
+    outline: none
+ul,
+li
+    list-style: none
+a
+    text-decoration: none
+.container
+    max-width: 1596px
+    width: 96%
+    margin: 0 auto
+// Navigation bar
+nav 
+    display: flex
+    justify-content: space-between
+    background-color: $white-color
+    color: #fff
+    padding: 10px 0
+    height: 100px
+    max-width: 1589px
+    width: 96%
+    margin: 40px auto
+
+nav .left
+    width: 869px
+    // padding-left: 132px
+    display: flex
+    align-items: center
+    
+nav .right
+    // padding-right: 132px
+    display: flex
+    align-items: center
+    ul
+        display: flex
+        height: 55px
+        align-items: center
+        // gap: 30px
+
+nav .logo
+    margin-right: 50px
+
+nav ul 
+    list-style: none
+    margin: 0
+    padding: 0
+nav li 
+    display: inline-block
+
+nav .navmenu a
+    padding: 17px 24px
+    border-radius: 8px
+    align-items: center
+    &:hover
+       background-color: $second-color
+       cursor: pointer
+       color: #fff    
+
+
+nav .navbtn button
+    padding: 14px 34px
+    border-radius: 8px
+    align-items: center
+    background-color: $white-color
+    &:hover
+        background-color: $second-color
+        cursor: pointer
+        color: #fff    
+
+nav a
+    color: $text-color
+    text-decoration: none
+
+// main section
+.courses
+    display: flex
+    flex-direction: column
+    &__text
+        display: flex
+        gap: 100px
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 100px
+        h1
+            display: flex
+            width: 50%
+            align-items: center
+            @include semiBold
+            font-size: $h1-font-size
+        p
+            width: 50%
+            padding-right: 6.94438vw
+            color: $weak-text-color
+            @include regular
+            font-size: $regular
+    &__card
+        background-color: $absolute-white
+        padding: 50px
+        &-text
+            display: flex
+            gap: 50px
+            justify-content: center
+            align-items: center
+            .text
+                width: 83%
+                margin-bottom: 30px
+                .mainText
+                    @include semiBold
+                    font-size: $semi-bold
+                    margin-bottom: 10px
+                .secondText
+                    @include regular
+                    font-size: $regular
+            .view
+                display: flex
+                justify-content: center
+                align-items: center
+                @include medium
+                font-size: $regular
+                a
+                    color: $main-color
+                    padding: 18px 24px
+                    background-color: $white-color
+                    &:hover
+                        background-color: $second-color
+                        color: $absolute-white
+        &-images
+            display: flex
+            width: 422px
+            gap: 30px
+            margin-bottom: 30px
+            img
+                max-width: 95.5%
+        &-author
+            display: flex
+            justify-content: space-between
+            .informacion
+                display: flex
+                gap: 10px
+                .info
+                    padding: 10px 16px
+                    border: 1px solid $white-color
+                    border-radius: 8px
+                    color: $weak-text-color
+                    @include regular
+            .author
+                font-size: 20px
+                @include medium
+                
+                    
+
+        
