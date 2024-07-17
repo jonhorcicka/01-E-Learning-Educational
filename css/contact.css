@@ -156,6 +156,9 @@ nav a {
   display: flex;
   width: 50%;
   align-items: center;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
 }
 .contact__text p {
   width: 50%;
@@ -226,6 +229,7 @@ nav a {
   height: 170px;
   margin-bottom: 50px;
   background-color: #F1F1F3;
+  resize: none;
 }
 .contact__card--form .person-msg .msgPole::placeholder {
   text-align: start;
@@ -295,42 +299,46 @@ nav a {
   display: flex;
   gap: 14px;
 }
-.contact__card--contact .socials .icon {
-  width: 52px;
-  height: 52px;
-  cursor: pointer;
-}
-.contact__card--contact .socials .fb {
-  background: #F1F1F3 url("../socials/fb.svg") no-repeat;
-  background-position: center;
-  border-radius: 8px;
-}
-.contact__card--contact .socials .fb:hover {
-  background: #FF9500 url("../socials/fbW.svg") no-repeat;
-  background-position: center;
-}
-.contact__card--contact .socials .tt {
-  background: #F1F1F3 url("../socials/tt.svg") no-repeat;
-  background-position: center;
-  border-radius: 8px;
-}
-.contact__card--contact .socials .tt:hover {
-  background: #FF9500 url("../socials/ttW.svg") no-repeat;
-  background-position: center;
-}
-.contact__card--contact .socials .linkedIn {
-  background: #F1F1F3 url("../socials/linkedIn.svg") no-repeat;
-  background-position: center;
-  border-radius: 8px;
-}
-.contact__card--contact .socials .linkedIn:hover {
-  background: #FF9500 url("../socials/linkedInW.svg") no-repeat;
-  background-position: center;
-}
 .contact__card--contact .socials p {
   color: #4C4C4D;
   font-family: "Be Vietnam Pro Regular", sans-serif;
   font-weight: 400;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.fb {
+  background: #F1F1F3 url("../socials/fb.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.fb:hover {
+  background: #FF9500 url("../socials/fbW.svg") no-repeat;
+  background-position: center;
+}
+
+.tt {
+  background: #F1F1F3 url("../socials/tt.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.tt:hover {
+  background: #FF9500 url("../socials/ttW.svg") no-repeat;
+  background-position: center;
+}
+
+.linkedIn {
+  background: #F1F1F3 url("../socials/linkedIn.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.linkedIn:hover {
+  background: #FF9500 url("../socials/linkedInW.svg") no-repeat;
+  background-position: center;
 }
 
 footer {
