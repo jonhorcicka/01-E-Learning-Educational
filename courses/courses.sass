@@ -118,6 +118,7 @@ nav a
     &__card
         background-color: $absolute-white
         padding: 50px
+        margin-bottom: 50px
         &-text
             display: flex
             gap: 50px
@@ -156,6 +157,7 @@ nav a
         &-author
             display: flex
             justify-content: space-between
+            margin-bottom: 50px
             .informacion
                 display: flex
                 gap: 10px
@@ -168,6 +170,127 @@ nav a
             .author
                 font-size: 20px
                 @include medium
+        &-program
+            display: flex
+            flex-direction: column
+            .head
+                border: 1px solid $white-color
+                padding: 24px 30px
+                border-radius: 10px 10px 0 0
+            .body
+                display: flex
+                border: 1px solid $white-color
+                border-radius: 0 0 10px 10px
+                .main
+                    padding: 30px 0
+                    width: 20%
+                    &-box
+                        border-right: 1px solid $white-color
+                        height: 100%
+                        padding: 0 50px
+                        display: flex
+                        flex-direction: column
+                        gap: 20px
+                        .mainText
+                            @include bold
+                            font-size: $bold
+                        .secondText
+                            @include medium
+                            font-size: $regular
+// ikony
+.icon
+    width: 52px
+    height: 52px
+    cursor: pointer
+.fb
+    background: $white-color url("../socials/fb.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/fbW.svg") no-repeat
+        background-position: center
+.tt
+    background: $white-color url("../socials/tt.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/ttW.svg") no-repeat
+        background-position: center
+.linkedIn
+    background: $white-color url("../socials/linkedIn.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/linkedInW.svg") no-repeat
+        background-position: center
+// Footer section
+footer
+    background-color: $absolute-white
+    margin: 100px auto 0
+    .up
+        max-width: 1590px
+        width: 96%
+        padding: 100px 0 0 0
+        background-color: $absolute-white
+        display: flex
+        margin: 0 auto
+        .left
+            width: 50%
+            .webLogo
+                margin-bottom: 40px
+            ul
+                display: flex
+                flex-direction: column
+                gap: 20px
+                @include regular
+                font-size: $regular
+                li
+                    display: flex
+                    gap: 6px
+                    align-items: center
+        .right
+            width: 50%
+            display: flex
+            gap: 30px
+            justify-content: space-around
+            .home, .aboutUs, .socials
+                ul
+                    display: flex
+                    flex-direction: column
+                    gap: 8px
+                    @include regular
+                    font-size: $regular
+                    color: $weak-text-color
+                    li
+                        &:first-child
+                            @include semiBold
+                            font-size: 20px
+                            color: $main-color
+                            margin-bottom: 14px
+            .socials
+                li
+                    display: flex
+                    gap: 14px
+                    img
+                        padding: 14px
+                        background-color: $bg-color
+                        border-radius: 8px
+                        &:hover
+                            background-color: $second-color
+                            color: $absolute-white
+    .space
+        height: 1px
+        margin: 50px auto
+        background-color: $white-color
+        display: flex
+        justify-content: center
+    .down
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 30px
+                        
+
                 
                     
 
