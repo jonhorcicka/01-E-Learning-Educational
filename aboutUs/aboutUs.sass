@@ -1,0 +1,275 @@
+@import ../partials/_mixins
+@import ../partials/_vars
+@import ../partials/_fonts
+// zakladní nastavení
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    @include medium
+    background-color: $white-color
+body,
+button
+    font-family: $body-font
+    font-size: $regular
+img, 
+iframe
+    max-width: 100%
+    height: auto
+button
+    cursor: pointer
+    border: none
+    outline: none
+ul,
+li
+    list-style: none
+a
+    text-decoration: none
+.container
+    max-width: 1596px
+    width: 96%
+    margin: 0 auto
+// Navigation bar
+nav 
+    display: flex
+    justify-content: space-between
+    background-color: $white-color
+    color: #fff
+    padding: 10px 0
+    height: 100px
+    max-width: 1589px
+    width: 96%
+    margin: 40px auto
+nav .left
+    width: 869px
+    // padding-left: 132px
+    display: flex
+    align-items: center  
+nav .right
+    // padding-right: 132px
+    display: flex
+    align-items: center
+    ul
+        display: flex
+        height: 55px
+        align-items: center
+        // gap: 30px
+nav .logo
+    margin-right: 50px
+
+nav ul 
+    list-style: none
+    margin: 0
+    padding: 0
+nav li 
+    display: inline-block
+
+nav .navmenu a
+    padding: 17px 24px
+    border-radius: 8px
+    align-items: center
+    &:hover
+       background-color: $second-color
+       cursor: pointer
+       color: #fff    
+
+
+nav .navbtn button
+    padding: 14px 34px
+    border-radius: 8px
+    align-items: center
+    background-color: $white-color
+    &:hover
+        background-color: $second-color
+        cursor: pointer
+        color: #fff    
+
+nav a
+    color: $text-color
+    text-decoration: none
+// main section
+.aboutUs
+    display: flex
+    flex-direction: column
+    &__text
+        display: flex
+        gap: 100px
+        width: 100%
+        margin-bottom: 100px
+        h1
+            display: flex
+            width: 50%
+            align-items: center
+            @include semiBold
+            font-size: $h1-font-size
+        p
+            width: 50%
+            padding-right: 6.94438vw
+            color: $weak-text-color
+            @include regular
+            font-size: $regular
+    &__textOne
+        margin-bottom: 80px
+        h1
+            @include medium
+            font-size: $h1-font-size
+        p
+            color: $weak-text-color
+            font-size: $regular
+    &__cards
+        margin: 0 0 177px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        gap: 30px
+        &:last-child
+            margin: 0 0 80px
+        .card
+            padding: 50px
+            background-color: $absolute-white
+            border-radius: 12px
+            img
+                padding: 16px
+                background-color: $weak-bg-color
+                border-radius: 8px
+                margin-bottom: 30px
+            h3
+                @include medium
+                font-size: $semi-bold
+                margin-bottom: 14px
+                color: $main-color
+            p
+                @include regular
+                font-size: $regular
+                color: $weak-text-color
+    .together
+        background-color: $absolute-white
+        border-radius: 12px
+        justify-content: space-between
+        display: flex
+        align-items: center
+        padding: 80px
+        height: 323px
+        background: $absolute-white url("../icons/aboutUs/shape-17.png") no-repeat
+        background-position: 81% center
+      
+
+        &__text
+            display: flex
+            flex-direction: column
+            width: 70%
+            h1
+                font-size: $h1-font-size
+                @include semiBold
+                margin-bottom: 20px
+            span
+                color: $second-color
+        // img
+        //     width: 445px
+        //     position: relative
+        //     right: 60px
+        //     z-index: -1
+        &__btn
+            display: flex
+            a
+                background-color: $white-color
+                padding: 18px 24px
+                border-radius: 8px
+                color: $main-color
+                &:hover
+                    color: $absolute-white
+                    background-color: $second-color
+// ikony
+.icon
+    width: 52px
+    height: 52px
+    cursor: pointer
+.fb
+    background: $white-color url("../socials/fb.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/fbW.svg") no-repeat
+        background-position: center
+.tt
+    background: $white-color url("../socials/tt.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/ttW.svg") no-repeat
+        background-position: center
+.linkedIn
+    background: $white-color url("../socials/linkedIn.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/linkedInW.svg") no-repeat
+        background-position: center
+// Footer section
+footer
+    background-color: $absolute-white
+    margin: 100px auto 0
+    .up
+        max-width: 1590px
+        width: 96%
+        padding: 100px 0 0 0
+        background-color: $absolute-white
+        display: flex
+        margin: 0 auto
+        .left
+            width: 50%
+            .webLogo
+                margin-bottom: 40px
+            ul
+                display: flex
+                flex-direction: column
+                gap: 20px
+                @include regular
+                font-size: $regular
+                li
+                    display: flex
+                    gap: 6px
+                    align-items: center
+        .right
+            width: 50%
+            display: flex
+            gap: 30px
+            justify-content: space-around
+            .home, .aboutUs, .socials
+                ul
+                    display: flex
+                    flex-direction: column
+                    gap: 8px
+                    @include regular
+                    font-size: $regular
+                    color: $weak-text-color
+                    li
+                        &:first-child
+                            @include semiBold
+                            font-size: 20px
+                            color: $main-color
+                            margin-bottom: 14px
+            .socials
+                li
+                    display: flex
+                    gap: 14px
+                    img
+                        padding: 14px
+                        background-color: $bg-color
+                        border-radius: 8px
+                        &:hover
+                            background-color: $second-color
+                            color: $absolute-white
+    .space
+        height: 1px
+        margin: 50px auto
+        background-color: $white-color
+        display: flex
+        justify-content: center
+    .down
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 30px
+        
