@@ -35,7 +35,7 @@
 body {
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
-  background-color: grey;
+  background-color: #F1F1F3;
 }
 
 body,
@@ -66,80 +66,63 @@ a {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1596px;
   width: 96%;
   margin: 0 auto;
 }
 
-nav {
+.navigation {
   display: flex;
-  justify-content: space-around;
-  background-color: #333;
+  justify-content: space-between;
+  background-color: #F1F1F3;
   color: #fff;
   padding: 10px 0;
   height: 100px;
-  max-width: 1860px;
+  max-width: 1589px;
+  width: 96%;
   margin: 40px auto;
 }
-
-nav .left {
+.navigation .left {
   width: 869px;
-  padding-left: 132px;
   display: flex;
   align-items: center;
 }
-
-nav .right {
-  padding-right: 132px;
-  display: flex;
-  align-items: center;
-}
-nav .right ul {
-  display: flex;
-  height: 55px;
-  align-items: center;
-  gap: 30px;
-}
-
-nav .logo {
+.navigation .left .logo {
   margin-right: 50px;
 }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.navigation .left__nav {
+  display: flex;
 }
-
-nav li {
-  display: inline-block;
-}
-
-nav .navmenu a {
+.navigation .left .navmenu {
   padding: 17px 24px;
   border-radius: 8px;
   align-items: center;
+  color: #262626;
 }
-nav .navmenu a:hover {
+.navigation .left .navmenu:hover {
   background-color: #FF9500;
   cursor: pointer;
   color: #fff;
 }
-
-nav .navbtn button {
+.navigation .right {
+  display: flex;
+  align-items: center;
+}
+.navigation .right__btn {
+  display: flex;
+  height: 55px;
+  align-items: center;
+}
+.navigation .right__btn .navbtn {
   padding: 14px 34px;
   border-radius: 8px;
   align-items: center;
+  background-color: #F1F1F3;
 }
-nav .navbtn button:hover {
+.navigation .right__btn .navbtn:hover {
   background-color: #FF9500;
   cursor: pointer;
   color: #fff;
-}
-
-nav a {
-  color: #4C4C4D;
-  text-decoration: none;
 }
 
 .container {
@@ -226,6 +209,9 @@ nav a {
 .hero__sponsor--list {
   display: flex;
   justify-content: space-around;
+}
+.hero__img {
+  border-radius: 15px;
 }
 
 .benefits {
@@ -611,20 +597,116 @@ nav a {
 
 .faq {
   background-color: #fff;
-  width: 100%;
-  height: 1202px;
+  display: flex;
+  padding: 100px;
   margin-bottom: 142px;
+}
+.faq--left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.faq--left .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq--left .text .mainText {
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #262626;
+}
+.faq--left .text .mainText .secondText {
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+}
+.faq--left .btnSeeAll a {
+  color: #262626;
+  padding: 18px 24px;
+  border: 1px solid #F1F1F3;
+  border-radius: 8px;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.faq--left .btnSeeAll a:hover {
+  color: #fff;
+  background-color: #FF9500;
+}
+.faq--right {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq--right .card {
+  border: 1px solid #F1F1F3;
+  border-radius: 12px;
+}
+.faq--right .card .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  max-width: 867px;
+  gap: 50px;
+}
+.faq--right .card .question .text {
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  color: #262626;
+  width: 665px;
+}
+.faq--right .card .question .btnPlus img {
+  padding: 12px;
+  background-color: #FFF4E5;
+  border-radius: 8px;
+}
+.faq--right .card .question .btnPlus img:hover {
+  cursor: pointer;
+}
+.faq--right .card .answer {
+  display: none;
+}
+.faq--right .card .answer .textOne {
+  border-top: 1px solid #F1F1F3;
+  color: #4C4C4D;
+  padding: 50px 0;
+  margin: 0 50px;
+}
+.faq--right .card .answer .more {
+  background-color: #F7F7F8;
+  display: flex;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 50px;
+}
+.faq--right .card .answer .more .textTwo {
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.faq--right .card .answer .more img {
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 50%;
 }
 
 footer {
   background-color: #fff;
-  justify-content: space-around;
-  margin: 40px auto 0;
+  margin: 150px auto 0;
 }
 footer .up {
-  padding: 4.472% 162px 0 162px;
+  max-width: 1590px;
+  width: 96%;
+  padding: 100px 0 0 0;
   background-color: #fff;
   display: flex;
+  margin: 0 auto;
 }
 footer .up .left {
   width: 50%;
@@ -682,7 +764,6 @@ footer .up .right .socials li img:hover {
 }
 footer .space {
   height: 1px;
-  width: 1595px;
   margin: 50px auto;
   background-color: #F1F1F3;
   display: flex;
@@ -693,4 +774,60 @@ footer .down {
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  background: #fff url("../icons/vectorLeftSu.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.arrowLeft:hover {
+  background: #FF9500 url("../icons/vectorLeftSuW.svg") no-repeat;
+  background-position: center;
+}
+
+.arrowRight {
+  background: #fff url("../icons/vectorRightSu.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.arrowRight:hover {
+  background: #FF9500 url("../icons/vectorRightSuW.svg") no-repeat;
+  background-position: center;
+}
+
+.fb {
+  background: #F1F1F3 url("../socials/fb.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.fb:hover {
+  background: #FF9500 url("../socials/fbW.svg") no-repeat;
+  background-position: center;
+}
+
+.tt {
+  background: #F1F1F3 url("../socials/tt.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.tt:hover {
+  background: #FF9500 url("../socials/ttW.svg") no-repeat;
+  background-position: center;
+}
+
+.linkedIn {
+  background: #F1F1F3 url("../socials/linkedIn.svg") no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.linkedIn:hover {
+  background: #FF9500 url("../socials/linkedInW.svg") no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=home.css.map */

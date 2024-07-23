@@ -9,21 +9,39 @@
 </head>
 <body>
     <!-- Hlavička -->
-    <nav>
+    <nav class="navigation">
         <div class="left">
             <a class="logo" href="#home.html"><img src="../icons/logoBC.svg" alt="Website Logo"></a>
-            <ul>
-                <li class="navmenu"><a href="#home.html">Home</a></li>
-                <li class="navmenu"><a href="#courses.html">Courses</a></li>
-                <li class="navmenu"><a href="#aboutUs.html">About Us</a></li>
-                <li class="navmenu"><a href="#pricing.html">Pricing</a></li>
-                <li class="navmenu"><a href="#contact.html">Contact</a></li>
+            <ul class="left__nav">
+                <li>
+                    <a class="navmenu" href="#home.html">Home</a>
+                </li>
+                <li>
+                    <a class="navmenu" href="#courses.html">Courses</a>
+                </li>
+                <li>
+                    <a class="navmenu" href="#aboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a class="navmenu" href="#pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a class="navmenu" href="#contact.html">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="right">
-            <ul>
-                <li class="navbtn"><a href="#signUp.html"><button>Sign Us</button></a></li>
-                <li class="navbtn"><a href="#login.html"><button href="#home.html">Login</button></a></li>
+            <ul class="right__btn">
+                <li>
+                    <a href="#signUp.html">
+                        <button class="navbtn">Sign Us</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#login.html">
+                        <button class="navbtn">Login</button>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -56,7 +74,7 @@
                     <li><img src="/sponsor/netflix.svg" alt="netflix"></li>      
                 </ul>
             </div>
-            <img src="/img/heroSection.jpg" alt="E-Learning">
+            <img class="hero__img" src="/img/heroSection.jpg" alt="E-Learning">
         </section>
         <section class="benefits">
             <div class="benefits__text">
@@ -418,9 +436,102 @@
             </div>
         </section>
         <section class="faq">
-            <div>
-
-            </div>
+                <div class="faq--left">
+                    <div class="text">
+                        <h1 class="mainText">Frequently Asked Questions</h1>
+                        <p class="secondText">Still you have any questions? Contact our Team via support@skillbridge.com</p>
+                    </div>
+                    <div class="btnSeeAll">
+                        <a href="#">See All FAQ’s</a>
+                    </div>
+                </div>
+                <div class="faq--right">
+                    <div class="card">
+                        <div class="question"> 
+                            <div class="text">
+                                <p>Can I enroll in multiple courses at once?</p>
+                            </div>
+                            <div class="btnPlus">
+                                <img src="../icons/plus.svg" alt="View">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p class="textOne">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                            <div class="more">
+                                <p class="textTwo">Enrollment Process for Different Courses</p>
+                                <img src="../icons/vectorRightOne.svg" alt="enter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="question"> 
+                            <div class="text">
+                                <p>What kind of support can I expect from instructors?</p>
+                            </div>
+                            <div class="btnPlus">
+                                <img src="../icons/plus.svg" alt="View">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p class="textOne">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                            <div class="more">
+                                <p class="textTwo">Enrollment Process for Different Courses</p>
+                                <img src="../icons/vectorRightOne.svg" alt="enter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="question"> 
+                            <div class="text">
+                                <p>Are the courses self-paced or do they have specific start and end dates?</p>
+                            </div>
+                            <div class="btnPlus">
+                                <img src="../icons/plus.svg" alt="View">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p class="textOne">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                            <div class="more">
+                                <p class="textTwo">Enrollment Process for Different Courses</p>
+                                <img src="../icons/vectorRightOne.svg" alt="enter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="question"> 
+                            <div class="text">
+                                <p>Are there any prerequisites for the courses?</p>
+                            </div>
+                            <div class="btnPlus">
+                                <img src="../icons/plus.svg" alt="View">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p class="textOne">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                            <div class="more">
+                                <p class="textTwo">Enrollment Process for Different Courses</p>
+                                <img src="../icons/vectorRightOne.svg" alt="enter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="question"> 
+                            <div class="text">
+                                <p>Can I download the course materials for offline access?</p>
+                            </div>
+                            <div class="btnPlus">
+                                <img src="../icons/plus.svg" alt="View">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p class="textOne">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                            <div class="more">
+                                <p class="textTwo">Enrollment Process for Different Courses</p>
+                                <img src="../icons/vectorRightOne.svg" alt="enter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
     <footer>
@@ -464,14 +575,20 @@
                     <ul>
                         <li>Social Profiles</li>
                         <li>
-                            <a href="#">
-                                <img src="../socials/fb.svg" alt="facebook">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <div class="icon fb" alt="facebook">
+                                </div>
+                                <!-- <img src="../socials/fb.svg" alt="facebook"> -->
                             </a>
-                            <a href="#">
-                                <img src="../socials/tt.svg" alt="twitter">
+                            <a href="https://x.com/" target="_blank">
+                                <div class="icon tt" alt="twitter">
+                                </div>
+                                <!-- <img src="../socials/tt.svg" alt="twitter"> -->
                             </a>
-                            <a href="#">
-                                <img src="../socials/linkedIn.svg" alt="linkedIn">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <div class="icon linkedIn" alt="linkedIn">
+                                </div>
+                                <!-- <img src="../socials/linkedIn.svg" alt="linkedIn"> -->
                             </a>
                         </li>
                     </ul>

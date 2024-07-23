@@ -71,7 +71,7 @@ a {
   margin: 0 auto;
 }
 
-nav {
+.navigation {
   display: flex;
   justify-content: space-between;
   background-color: #F1F1F3;
@@ -82,63 +82,47 @@ nav {
   width: 96%;
   margin: 40px auto;
 }
-
-nav .left {
+.navigation .left {
   width: 869px;
   display: flex;
   align-items: center;
 }
-
-nav .right {
-  display: flex;
-  align-items: center;
-}
-nav .right ul {
-  display: flex;
-  height: 55px;
-  align-items: center;
-}
-
-nav .logo {
+.navigation .left .logo {
   margin-right: 50px;
 }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.navigation .left__nav {
+  display: flex;
 }
-
-nav li {
-  display: inline-block;
-}
-
-nav .navmenu a {
+.navigation .left .navmenu {
   padding: 17px 24px;
   border-radius: 8px;
   align-items: center;
+  color: #262626;
 }
-nav .navmenu a:hover {
+.navigation .left .navmenu:hover {
   background-color: #FF9500;
   cursor: pointer;
   color: #fff;
 }
-
-nav .navbtn button {
+.navigation .right {
+  display: flex;
+  align-items: center;
+}
+.navigation .right__btn {
+  display: flex;
+  height: 55px;
+  align-items: center;
+}
+.navigation .right__btn .navbtn {
   padding: 14px 34px;
   border-radius: 8px;
   align-items: center;
   background-color: #F1F1F3;
 }
-nav .navbtn button:hover {
+.navigation .right__btn .navbtn:hover {
   background-color: #FF9500;
   cursor: pointer;
   color: #fff;
-}
-
-nav a {
-  color: #4C4C4D;
-  text-decoration: none;
 }
 
 .contact {
