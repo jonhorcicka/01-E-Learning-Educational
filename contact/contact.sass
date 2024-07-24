@@ -13,7 +13,10 @@ body,
 button
     font-family: $body-font
     font-size: $regular
-
+    @media (max-width: 1280px)
+        font-size: $regular-laptop
+    @media (max-width: 767px)
+        font-size: $regular-mobile
 img, 
 iframe
     max-width: 100%
@@ -41,15 +44,27 @@ a
     height: 100px
     max-width: 1589px
     width: 96%
-    margin: 40px auto
+    margin: 0 auto
+    @media (max-width: 1280px)
+        font-size: $btn-laptop
+        @include regular     
     .left
         width: 869px
         display: flex
         align-items: center
+        @media (max-width: 767px)
+                 width: 25% 
         .logo
             margin-right: 50px
+            width: 54px
+            height: 54px
+            @media (max-width: 1280px)
+                width: 44px
+                height: 44px
         &__nav
             display: flex
+            @media (max-width: 767px)
+                display: none    
         .navmenu
             padding: 17px 24px
             border-radius: 8px
@@ -58,7 +73,7 @@ a
             &:hover
                 background-color: $second-color
                 cursor: pointer
-                color: #fff 
+                color: #fff
     .right
         display: flex
         align-items: center
@@ -71,6 +86,11 @@ a
                 border-radius: 8px
                 align-items: center
                 background-color: $white-color
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @include regular
+                @media (max-width: 767px)
+                    padding: 12px 20px
                 &:hover
                     background-color: $second-color
                     cursor: pointer
@@ -80,29 +100,46 @@ a
 .contact
     display: flex
     flex-direction: column
+    @media (max-width: 767px)
+        margin-bottom: 50px
     &__text
         display: flex
         gap: 100px
         width: 100%
         justify-content: space-between
         margin-bottom: 100px
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 16px
+            margin-bottom: 50px
         h1
             display: flex
             width: 50%
             align-items: center
             @include semiBold
             font-size: $h1-font-size
+            @media (max-width: 1280px)
+                font-size: $h1-font-size-laptop
+            @media (max-width: 767px)
+                width: 100%
         p
             width: 50%
             padding-right: 6.94438vw
             color: $weak-text-color
             @include regular
             font-size: $regular
+            @media (max-width: 1280px)
+                font-size: $regular-laptop
+            @media (max-width: 767px)
+                width: 100%
+                padding-right: 0
     &__card
         background-color: $absolute-white
         border: 1px solid $white-color
         border-radius: 12px
         display: flex
+        @media (max-width: 767px)
+            flex-direction: column
         &--form
             display: flex
             flex-direction: column
@@ -110,11 +147,16 @@ a
             border: 1px solid $white-color
             max-width: 916px
             width: 100%
+            @media (max-width: 767px)
+                padding: 30px
             .person-contact
                 display: grid
                 grid-template-columns: repeat(2, 1fr)
                 gap: 30px
                 margin-bottom: 30px
+                @media (max-width: 767px)
+                    grid-template-columns: repeat(1, 1fr)
+                    gap: 20px
                 .nameText
                     display: flex
                     flex-direction: column
@@ -122,6 +164,8 @@ a
                     @include medium
                     font-size: $regular
                     color: $main-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
                 .namePole
                     width: 100%
                     padding: 24px 20px
@@ -132,7 +176,8 @@ a
                 display: flex
                 flex-direction: column
                 gap: 50px
-
+                @media (max-width: 767px)
+                    gap: 20px
                 .nameText
                     display: flex
                     flex-direction: column
@@ -140,6 +185,8 @@ a
                     @include medium
                     font-size: $regular
                     color: $main-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
                 .namePole
                     width: 100%
                     padding: 24px 20px
@@ -153,6 +200,8 @@ a
                     resize: none
                     &::placeholder
                         text-align: start
+                    @media (max-width: 767px)
+                        margin-bottom: 30px
             .btnmsg
                 width: 28%
                 padding: 18px 24px
@@ -161,14 +210,22 @@ a
                 display: flex
                 justify-content: center
                 align-self: center
+                @include medium
                 &:hover
                     background-color: $second-color
                     color: $absolute-white
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                @media (max-width: 767px)
+                    width: 100%
         &--contact
             padding: 80px
             display: flex
             flex-direction: column
             gap: 50px
+            @media (max-width: 767px)
+                padding: 30px
+                gap: 20px
             .icons
                 display: flex
                 flex-direction: column
@@ -275,13 +332,21 @@ a
 footer
     background-color: $absolute-white
     margin: 150px auto 0
+    @media (max-width: 767px)
+        margin: 0 auto
     .up
         max-width: 1590px
         width: 96%
-        padding: 100px 0 0 0
+        padding: 100px 0 0 
         background-color: $absolute-white
         display: flex
         margin: 0 auto
+        @media (max-width: 1280px)
+            padding: 60px 0 0 0 
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 24px
+            padding: 50px 0 0 
         .left
             width: 50%
             .webLogo
@@ -292,6 +357,10 @@ footer
                 gap: 20px
                 @include regular
                 font-size: $regular
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $footer-mobile
                 li
                     display: flex
                     gap: 6px
@@ -301,6 +370,10 @@ footer
             display: flex
             gap: 30px
             justify-content: space-around
+            @media (max-width: 767px)
+                display: flex
+                flex-direction: column
+                gap: 24px
             .home, .aboutUs, .socials
                 ul
                     display: flex
@@ -309,16 +382,28 @@ footer
                     @include regular
                     font-size: $regular
                     color: $weak-text-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                     li
                         &:first-child
                             @include semiBold
                             font-size: 20px
                             color: $main-color
                             margin-bottom: 14px
+                            @media (max-width: 1280px)
+                                font-size: $medium-laptop
+            &__nav
+                display: flex
+                gap: 30px
+                width: 350px
             .socials
                 li
                     display: flex
                     gap: 14px
+                    @media (max-width: 767px)
+                        gap: 10px
                     img
                         padding: 14px
                         background-color: $bg-color
@@ -332,8 +417,18 @@ footer
         background-color: $white-color
         display: flex
         justify-content: center
+        @media (max-width: 1280px)
+            margin: 30px auto
     .down
         display: flex
         justify-content: center
         align-items: center
         padding-bottom: 30px
+        @media (max-width: 1280px)
+            font-size: $btn-laptop
+
+#dropdown
+    display: none
+    @media (max-width: 767px)
+        display: block
+        margin-left: 20px

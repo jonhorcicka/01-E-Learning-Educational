@@ -43,6 +43,18 @@ button {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  body,
+  button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  body,
+  button {
+    font-size: 14px;
+  }
+}
 
 img,
 iframe {
@@ -80,18 +92,43 @@ a {
   height: 100px;
   max-width: 1589px;
   width: 96%;
-  margin: 40px auto;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .navigation {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
 }
 .navigation .left {
   width: 869px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .navigation .left {
+    width: 25%;
+  }
+}
 .navigation .left .logo {
   margin-right: 50px;
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 1280px) {
+  .navigation .left .logo {
+    width: 44px;
+    height: 44px;
+  }
 }
 .navigation .left__nav {
   display: flex;
+}
+@media (max-width: 767px) {
+  .navigation .left__nav {
+    display: none;
+  }
 }
 .navigation .left .navmenu {
   padding: 17px 24px;
@@ -119,6 +156,18 @@ a {
   align-items: center;
   background-color: #F1F1F3;
 }
+@media (max-width: 1280px) {
+  .navigation .right__btn .navbtn {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
+}
+@media (max-width: 767px) {
+  .navigation .right__btn .navbtn {
+    padding: 12px 20px;
+  }
+}
 .navigation .right__btn .navbtn:hover {
   background-color: #FF9500;
   cursor: pointer;
@@ -129,12 +178,24 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 767px) {
+  .contact {
+    margin-bottom: 50px;
+  }
+}
 .contact__text {
   display: flex;
   gap: 100px;
   width: 100%;
   justify-content: space-between;
   margin-bottom: 100px;
+}
+@media (max-width: 767px) {
+  .contact__text {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
 }
 .contact__text h1 {
   display: flex;
@@ -144,6 +205,16 @@ a {
   font-weight: 600;
   font-size: 48px;
 }
+@media (max-width: 1280px) {
+  .contact__text h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__text h1 {
+    width: 100%;
+  }
+}
 .contact__text p {
   width: 50%;
   padding-right: 6.94438vw;
@@ -152,11 +223,27 @@ a {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  .contact__text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__text p {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .contact__card {
   background-color: #fff;
   border: 1px solid #F1F1F3;
   border-radius: 12px;
   display: flex;
+}
+@media (max-width: 767px) {
+  .contact__card {
+    flex-direction: column;
+  }
 }
 .contact__card--form {
   display: flex;
@@ -166,11 +253,22 @@ a {
   max-width: 916px;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .contact__card--form {
+    padding: 30px;
+  }
+}
 .contact__card--form .person-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .contact__card--form .person-contact {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }
 .contact__card--form .person-contact .nameText {
   display: flex;
@@ -180,6 +278,11 @@ a {
   font-weight: 500;
   font-size: 18px;
   color: #262626;
+}
+@media (max-width: 1280px) {
+  .contact__card--form .person-contact .nameText {
+    font-size: 16px;
+  }
 }
 .contact__card--form .person-contact .namePole {
   width: 100%;
@@ -193,6 +296,11 @@ a {
   flex-direction: column;
   gap: 50px;
 }
+@media (max-width: 767px) {
+  .contact__card--form .person-msg {
+    gap: 20px;
+  }
+}
 .contact__card--form .person-msg .nameText {
   display: flex;
   flex-direction: column;
@@ -201,6 +309,11 @@ a {
   font-weight: 500;
   font-size: 18px;
   color: #262626;
+}
+@media (max-width: 1280px) {
+  .contact__card--form .person-msg .nameText {
+    font-size: 16px;
+  }
 }
 .contact__card--form .person-msg .namePole {
   width: 100%;
@@ -218,6 +331,11 @@ a {
 .contact__card--form .person-msg .msgPole::placeholder {
   text-align: start;
 }
+@media (max-width: 767px) {
+  .contact__card--form .person-msg .msgPole {
+    margin-bottom: 30px;
+  }
+}
 .contact__card--form .btnmsg {
   width: 28%;
   padding: 18px 24px;
@@ -226,16 +344,34 @@ a {
   display: flex;
   justify-content: center;
   align-self: center;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  font-weight: 500;
 }
 .contact__card--form .btnmsg:hover {
   background-color: #FF9500;
   color: #fff;
+}
+@media (max-width: 1280px) {
+  .contact__card--form .btnmsg {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__card--form .btnmsg {
+    width: 100%;
+  }
 }
 .contact__card--contact {
   padding: 80px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+@media (max-width: 767px) {
+  .contact__card--contact {
+    padding: 30px;
+    gap: 20px;
+  }
 }
 .contact__card--contact .icons {
   display: flex;
@@ -329,13 +465,30 @@ footer {
   background-color: #fff;
   margin: 150px auto 0;
 }
+@media (max-width: 767px) {
+  footer {
+    margin: 0 auto;
+  }
+}
 footer .up {
   max-width: 1590px;
   width: 96%;
-  padding: 100px 0 0 0;
+  padding: 100px 0 0;
   background-color: #fff;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  footer .up {
+    padding: 60px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  footer .up {
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 0 0;
+  }
 }
 footer .up .left {
   width: 50%;
@@ -351,6 +504,16 @@ footer .up .left ul {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  footer .up .left ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .left ul {
+    font-size: 15px;
+  }
+}
 footer .up .left ul li {
   display: flex;
   gap: 6px;
@@ -362,6 +525,13 @@ footer .up .right {
   gap: 30px;
   justify-content: space-around;
 }
+@media (max-width: 767px) {
+  footer .up .right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
   display: flex;
   flex-direction: column;
@@ -371,6 +541,16 @@ footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .so
   font-size: 18px;
   color: #59595A;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 14px;
+  }
+}
 footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
@@ -378,9 +558,24 @@ footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:firs
   color: #262626;
   margin-bottom: 14px;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
+    font-size: 18px;
+  }
+}
+footer .up .right__nav {
+  display: flex;
+  gap: 30px;
+  width: 350px;
+}
 footer .up .right .socials li {
   display: flex;
   gap: 14px;
+}
+@media (max-width: 767px) {
+  footer .up .right .socials li {
+    gap: 10px;
+  }
 }
 footer .up .right .socials li img {
   padding: 14px;
@@ -398,9 +593,29 @@ footer .space {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1280px) {
+  footer .space {
+    margin: 30px auto;
+  }
+}
 footer .down {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+}
+@media (max-width: 1280px) {
+  footer .down {
+    font-size: 14px;
+  }
+}
+
+#dropdown {
+  display: none;
+}
+@media (max-width: 767px) {
+  #dropdown {
+    display: block;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=contact.css.map */
