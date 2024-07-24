@@ -31,6 +31,30 @@ a
     max-width: 1596px
     width: 96%
     margin: 0 auto
+// Banner
+.banner
+    max-width: 1860px
+    width: 96%
+    margin: 20px auto 0
+    background-color: $second-color
+    height: 55px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 8px
+    gap: 23px
+    @include regular
+    &__text
+        color: $absolute-white
+    img
+        width: 24px
+        height: 24px
+    @media (max-width: 1280px)
+        font-size: $btn-laptop
+        img
+            width: 20px
+            height: 20px
+
 // Navigation bar
 .navigation
     display: flex
@@ -41,15 +65,27 @@ a
     height: 100px
     max-width: 1589px
     width: 96%
-    margin: 40px auto
+    margin: 0 auto
+    @media (max-width: 1280px)
+        font-size: $btn-laptop
+        @include regular     
     .left
         width: 869px
         display: flex
         align-items: center
+        @media (max-width: 767px)
+                 width: 50% 
         .logo
             margin-right: 50px
+            width: 54px
+            height: 54px
+            @media (max-width: 1280px)
+                width: 44px
+                height: 44px
         &__nav
             display: flex
+            @media (max-width: 767px)
+                display: none    
         .navmenu
             padding: 17px 24px
             border-radius: 8px
@@ -58,7 +94,7 @@ a
             &:hover
                 background-color: $second-color
                 cursor: pointer
-                color: #fff 
+                color: #fff
     .right
         display: flex
         align-items: center
@@ -71,6 +107,11 @@ a
                 border-radius: 8px
                 align-items: center
                 background-color: $white-color
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @include regular
+                @media (max-width: 767px)
+                    padding: 12px 20px
                 &:hover
                     background-color: $second-color
                     cursor: pointer
@@ -85,13 +126,17 @@ a
     flex-direction: column
     align-items: center
     margin: 100px auto 150px
+    @media (max-width: 1280px)
+        margin: 80px auto 100px
+    @media (max-width: 767px)
+        margin: 50px auto
     &__top
         display: flex
-        height: 100px
-        width: 855px
+        gap: 10px
         @include semiBold
         background-color: #fff
         border-radius: 11px
+        padding: 12px
         &::before
             content: ""
             width: 39px
@@ -102,35 +147,69 @@ a
             left: -28px
         img
             object-position: 50% 50%
-            width: 63px
-            height: 63px
-            margin: 20px 0 0 -25px
+            width: 62px
+            height: 62px
+            margin: 0 0 0 -40px
+            display: flex
+            justify-content: center
+            align-items: center
+            @media (max-width: 1280px)
+                width: 48px
+                height: 48px       
         h1
             font-size: $h1-font-size
             align-self: center
-  
+            @media (max-width: 1280px)
+                font-size: $h1-font-size-laptop
+            @media (max-width: 767px)
+                font-size: $regular-mobile2
         span
             color: $second-color
             font-size: $h1-font-size
+            @media (max-width: 1280px)
+                font-size: $h1-font-size-laptop
+            @media (max-width: 767px)
+                font-size: $regular-mobile2
     &__medium
-        h2
+        &--text
             font-size: $h2-font-size
-            padding-top: 20px
+            margin-top: 20px
+            @media (max-width: 1280px)
+                font-size: $h2-font-size-laptop
+                @include medium
+            @media (max-width: 767px)
+                font-size: $h2-font-size-mobile
+                display: flex
+                justify-content: center
+                width: 270px  
+                margin: 16px auto 0 
         p
             display: flex
             font-size: $regular
             padding-top: 20px
             justify-content: center
+            @media (max-width: 1280px)
+                font-size: $regular-laptop
+                @include regular
+            @media (max-width: 767px)
+                font-size: $regular-mobile 
+                display: flex
+                justify-content: center
+
     &__bottom 
         display: flex
         gap: 12px
         padding: 60px 0 100px
+        @media (max-width: 767px)
+            padding: 50px 0 30px
         &--btn
             button
                 @include medium
                 padding: 18px 24px
                 border-radius: 8px
-                background-color: $white-color 
+                background-color: $absolute-white
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
                 &:hover
                     padding: 18px 23px
                     color: #fff
@@ -143,32 +222,60 @@ a
         margin-bottom: 100px
         align-content: center
         border-radius: 12px
+        @media (max-width: 767px)
+            height: 84px
+            margin-bottom: 30px
         &--list
             display: flex
             justify-content: space-around
+            @media (max-width: 767px)
+                & li:nth-child(n+4)
+                    display: none
+          
     &__img
         border-radius: 15px
 
 // Benefits section
 .benefits
     margin-bottom: 100px
+    @media (max-width: 767px)
+        margin-bottom: 50px
     &__text
         display: flex
-        justify-content: space-between
+        // justify-content: space-between
         margin-bottom: 80px
+        gap: 15vw
+        @media (max-width: 767px)
+                flex-direction: column
+                gap: 20px
+                margin-bottom: 40px
         .textOne
-            max-width: 1177px
             h1
                 font-size: $h1-font-size
                 @include semiBold
                 padding-bottom: 10px
+                @media (max-width: 1280px)
+                    font-size: $h1-font-size-laptop
+                @media (max-width: 767px)
+                font-size: $h1-font-size-mobile
+            p
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                    @include regular
         .textTwo
             display: flex
+            justify-content: flex-end
             align-items: flex-end
+            width: 200px
+            @media (max-width: 767px)
+                justify-content: flex-start
             p
                 padding: 18px 24px
                 background-color: $bg-btn-color
                 border-radius: 8px
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @include medium
                 &:hover
                     background-color: $second-color
                     color: $absolute-white
@@ -177,6 +284,8 @@ a
         display: grid
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 20px
+        @media (max-width: 767px)
+                grid-template-columns: repeat(1, 1fr)
         .card
             display: flex
             flex-direction: column
@@ -186,23 +295,50 @@ a
             padding: 50px
             border-radius: 12px
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+            @media (max-width: 767px)
+                padding: 30px
+                align-items: center
             .number
                 font-size: $number-size
                 @include bold
                 display: flex
                 justify-content: flex-end
                 margin-bottom: 50px
+                @media (max-width: 1280px)
+                    font-size: $number-size-laptop
+                @media (max-width: 767px)
+                    font-size: $number-size-mobile
+                    margin-bottom: 30px
             h3
                 @include semiBold
                 font-size: $semi-bold
                 padding-bottom: 14px
+                @media (max-width: 1280px)
+                    font-size: $semi-bold-laptop
             .text
                 padding-bottom: 50px
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                    @include regular
+                @media (max-width: 767px)
+                font-size: $regular-mobile
+                padding-bottom: 30px
             .vector              
                 height: 74px
                 padding: 20px
                 background-color: $bg-color
                 border-radius: 8px
+                @media (max-width: 1280px)
+                    height: 54px
+                    width: 54px
+                    padding: 14px
+                    img
+                        width: 26px
+                        height: 26px
+                @media (max-width: 767px)
+                    display: flex
+                    align-self: flex-end
+
                 &:hover
                     background-color: #000
                     cursor: pointer
@@ -210,19 +346,40 @@ a
 // Courses section
 .courses
     margin-bottom: 100px
+    @media (max-width: 767px)
+        margin-bottom: 50px
     &__text
         display: flex
-        justify-content: space-between
         margin-bottom: 80px
+        gap: 15vw
+        @media (max-width: 1280px)
+            margin-bottom: 60px
+        @media (max-width: 767px)
+                flex-direction: column
+                gap: 20px
+                margin-bottom: 40px
         .textOne
-            max-width: 1177px
             h1
                 font-size: $h1-font-size
                 @include semiBold
                 padding-bottom: 10px
+                @media (max-width: 1280px)
+                    font-size: $h1-font-size-laptop
+                @media (max-width: 767px)
+                    font-size: $h1-font-size-mobile
+            p
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                    @include regular
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
         .textTwo
             display: flex
             align-items: flex-end
+            justify-content: flex-end
+            width: 200px
+            @media (max-width: 767px)
+                justify-content: flex-start
             p
                 padding: 18px 24px
                 background-color: $bg-btn-color
@@ -231,10 +388,16 @@ a
                     background-color: $second-color
                     color: $absolute-white
                     cursor: pointer
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @include medium   
     &__tabs
         display: grid
         grid-template-columns: repeat(2, 1fr)
         grid-gap: 20px
+        @media (max-width: 767px)
+            font-size: $h2-font-size-mobile
+            grid-template-columns: repeat(1, 1fr)
         .card
             display: flex
             flex-direction: column
@@ -244,10 +407,17 @@ a
             padding: 50px
             border-radius: 12px
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+            @media (max-width: 767px)
+                align-items: center
+                padding: 24px
             &__advance
                 display: flex
                 justify-content: space-between
                 margin: 30px 0
+                @media (max-width: 767px)
+                    flex-direction: column
+                    gap: 14px
+                    margin: 24px 0
                 .week
                     display: flex
                     gap: 10px
@@ -256,15 +426,29 @@ a
                         background-color: $bg-color
                         border-radius: 8px
                         @include regular
-                        
+                        @media (max-width: 1280px)
+                            font-size: $btn-laptop       
                 .author
                     align-self: center
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                        @include medium
+                    @media (max-width: 767px)
+                        align-self: flex-start
             h3
                 @include semiBold
                 font-size: $semi-bold
+                @media (max-width: 1280px)
+                    font-size: $semi-bold-laptop
+                @media (max-width: 767px)
+                    font-size: $medium-mobile
             .text
                 margin: 14px 0 30px
                 @include regular
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
             .btn
                 display: inline-flex
                 width: 100%
@@ -277,23 +461,50 @@ a
                         background-color: $second-color
                         color: $absolute-white
                         cursor: pointer
+                    @media (max-width: 1280px)
+                        @include medium
+                        font-size: $btn-laptop
 
 // testimonials section
 .testimonials
     margin-bottom: 150px
+    @media (max-width: 1280px)
+        margin-bottom: 100px
+    @media (max-width: 767px)
+        margin-bottom: 50px
     &__text
         display: flex
         justify-content: space-between
         margin-bottom: 80px
+        gap: 15vw
+        @media (max-width: 1280px)
+            margin-bottom: 60px
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 20px
+            margin-bottom: 40px
         .textOne
-            max-width: 1177px
             h1
                 font-size: $h1-font-size
                 @include semiBold
                 padding-bottom: 10px
+                @media (max-width: 1280px)
+                    font-size: $h1-font-size-laptop
+                @media (max-width: 767px)
+                    font-size: $h1-font-size-mobile
+            p
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                    @include regular
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
         .textTwo
             display: flex
+            justify-content: flex-end
             align-items: flex-end
+            width: 200px
+            @media (max-width: 767px)
+                justify-content: flex-start
             p
                 padding: 18px 24px
                 background-color: $bg-btn-color
@@ -302,10 +513,15 @@ a
                     background-color: $second-color
                     color: $absolute-white
                     cursor: pointer
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @include medium             
     &__tabs
         display: grid
         grid-template-columns: repeat(2, 1fr)
         grid-gap: 20px
+        @media (max-width: 767px)
+            grid-template-columns: repeat(1, 1fr)
         .card
             display: flex
             flex-direction: column
@@ -315,8 +531,15 @@ a
             padding: 50px 50px 30px
             border-radius: 12px
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+            @media (max-width: 767px)
+                padding: 30px 30px 20px
             .text
                 margin-bottom: 50px
+                @media (max-width: 1280px)
+                    @include regular
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
             .author
                 display: flex
                 justify-content: space-between
@@ -325,29 +548,56 @@ a
                     display: flex
                     gap: 15px
                     align-items: center
+                    @media (max-width: 1280px)
+                        @include semiBold
+                        font-size: $regular-laptop
                 .moreStory
                     padding: 18px 24px
                     background-color: $white-color
                     border-radius: 8px
+                    display: flex
+                    justify-content: center
+                    align-items: center
                     &:hover
                         cursor: pointer
                         background-color: $second-color
                         color: $absolute-white
-
+                    @media (max-width: 1280px)
+                        @include medium
+                        font-size: $btn-laptop
+                    @media (max-width: 767px)
+                        padding: 14px 16px
 // Pricing section
 .pricing
     margin-bottom: 150px
+    @media (max-width: 1280px)
+        margin-bottom: 100px
+    @media (max-width: 767px)
+        margin-bottom: 50px
     &__text
         display: flex
         justify-content: space-between
         align-items: center
         margin-bottom: 80px
+        gap: 5vw
+        @media (max-width: 767px)
+            flex-direction: column
+            margin-bottom: 40px
         .textOne
-            max-width: 1177px
             h1
                 font-size: $h1-font-size
                 @include semiBold
                 padding-bottom: 10px
+                @media (max-width: 1280px)
+                    font-size: $h1-font-size-laptop
+                @media (max-width: 767px)
+                    font-size: $h1-font-size-mobile
+            p
+                @media (max-width: 1280px)
+                    @include regular
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
         .textTwo
             display: flex
             align-items: center
@@ -364,6 +614,9 @@ a
                     background-color: $second-color
                     color: $absolute-white
                     cursor: pointer
+            @media (max-width: 1280px)
+                @include medium
+                font-size: $btn-laptop
     &__tabs
         display: grid
         grid-template-columns: repeat(2, 1fr)
@@ -371,6 +624,9 @@ a
         background-color: $absolute-white
         padding: 80px
         border-radius: 12px
+        @media (max-width: 767px)
+            grid-template-columns: repeat(1, 1fr)
+            padding: 20px
         .card
             display: flex
             flex-direction: column
@@ -390,14 +646,28 @@ a
                 @include medium
                 display: flex
                 justify-content: center
+                @media (max-width: 1280px)
+                    font-size: $medium-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile2
+                    margin-bottom: 30px
             .price
                 margin-bottom: 50px
                 color: $text-color
                 font-size: 20px
                 @include medium
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
+                    margin-bottom: 30px
                 span
                     @include semiBold
                     font-size: $number-size
+                    @media (max-width: 1280px)
+                        font-size: $number-size-laptop
+                    @media (max-width: 767px)
+                        font-size: $number-size-mobile
             .list
                 width: 100%
                 background-color: $absolute-white
@@ -411,6 +681,10 @@ a
                     padding: 40px 0 30px
                     @include medium
                     font-size: 20px
+                    @media (max-width: 1280px)
+                        font-size: $medium-laptop
+                    @media (max-width: 767px)
+                        padding: 20px 0 0
                 &__main
                     display: flex
                     align-items: center
@@ -424,10 +698,14 @@ a
                     font-size: $regular
                     &:last-child
                         margin-bottom: 40px
+                    @media (max-width: 1280px)
+                        font-size: $btn-laptop
                     img
                         background-color: $bg-icon-color
                         padding: 6px
                         border-radius: 6px
+                        @media (max-width: 1280px)
+                            width: 24px
                     &-nope
                         display: flex
                         align-items: center
@@ -439,9 +717,13 @@ a
                         border-radius: 8px
                         &:last-child
                             margin-bottom: 40px
+                        @media (max-width: 1280px)
+                            font-size: $btn-laptop
                         img
                             background-color: $white-color
                             border-radius: 6px
+                            @media (max-width: 1280px)
+                                width: 24px
         button
             width: 100%
             background-color: $white-color
@@ -449,25 +731,30 @@ a
             border-radius: 0 0 8px 8px
             color: $main-color
             @include semiBold
+            @media (max-width: 767px)
+                color: $absolute-white
+                background-color: $second-color
             &:hover
                 color: $absolute-white
                 background-color: $second-color
-            
+            @media (max-width: 1280px)
+                font-size: $btn-laptop       
 // FAQ section
-// .faq
-//     background-color: $absolute-white
-//     width: 100%
-//     height: 1202px
-//     margin-bottom: 142px
 .faq
     background-color: $absolute-white
     display: flex
     padding: 100px
     margin-bottom: 142px
+    @media (max-width: 767px)
+        flex-direction: column
+        padding: 24px
+        margin-bottom: 50px
     &--left
         display: flex
         flex-direction: column
         gap: 50px
+        @media (max-width: 767px)
+            gap: 20px
         .text
             display: flex
             flex-direction: column
@@ -476,11 +763,22 @@ a
                 @include semiBold
                 font-size: $h1-font-size
                 color: $main-color
-                .secondText
-                    @include regular
-                    font-size: $regular
-                    color: #333
+                @media (max-width: 1280px)
+                    font-size: $h1-font-size-laptop
+                @media (max-width: 767px)
+                    font-size: $h1-font-size-mobile
+            .secondText
+                @include regular
+                font-size: $regular
+                color: #333
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile              
         .btnSeeAll
+            @media (max-width: 767px)
+                display: inline-flex
+                margin-bottom: 40px
             a
                 color: $main-color
                 padding: 18px 24px
@@ -491,11 +789,16 @@ a
                 &:hover
                     color: $absolute-white
                     background-color: $second-color
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
     &--right
         width: 63%
         display: flex
         flex-direction: column
         gap: 30px
+        @media (max-width: 767px)
+            width: 100%
+            gap: 20px
         .card
             border: 1px solid $white-color
             border-radius: 12px
@@ -506,17 +809,27 @@ a
                 padding: 30px 50px
                 max-width: 867px
                 gap: 50px
+                @media (max-width: 767px)
+                    padding: 20px 24px
+                    gap: 30px
                 .text
                     @include medium
                     color: $main-color
                     width: 665px
+                    @media (max-width: 1280px)
+                        font-size: $medium-laptop
                 .btnPlus
+                    @media (max-width: 767px)
+                        width: 100%
+                        max-width: 40px
                     img
                         padding: 12px
                         background-color:$weak-second-color
                         border-radius: 8px
                         &:hover
                             cursor: pointer
+                        @media (max-width: 767px)
+                            padding: 10px
             .answer
                 display: none
                 .textOne
@@ -524,6 +837,11 @@ a
                     color: $text-color
                     padding: 50px 0
                     margin: 0 50px
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                        @include regular
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile2
                 .more
                     background-color: $bg-color
                     display: flex
@@ -534,6 +852,10 @@ a
                     .textTwo
                         @include medium
                         font-size: $regular
+                        @media (max-width: 1280px)
+                            font-size: $regular-laptop
+                        @media (max-width: 767px)
+                            font-size: $regular-mobile
                     img
                         background-color: $absolute-white
                         padding: 14px
@@ -543,13 +865,21 @@ a
 footer
     background-color: $absolute-white
     margin: 150px auto 0
+    @media (max-width: 767px)
+        margin: 0 auto
     .up
         max-width: 1590px
         width: 96%
-        padding: 100px 0 0 0
+        padding: 100px 0 0 
         background-color: $absolute-white
         display: flex
         margin: 0 auto
+        @media (max-width: 1280px)
+            padding: 60px 0 0 0 
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 24px
+            padding: 50px 0 0 
         .left
             width: 50%
             .webLogo
@@ -560,6 +890,10 @@ footer
                 gap: 20px
                 @include regular
                 font-size: $regular
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $footer-mobile
                 li
                     display: flex
                     gap: 6px
@@ -569,6 +903,10 @@ footer
             display: flex
             gap: 30px
             justify-content: space-around
+            @media (max-width: 767px)
+                display: flex
+                flex-direction: column
+                gap: 24px
             .home, .aboutUs, .socials
                 ul
                     display: flex
@@ -577,16 +915,28 @@ footer
                     @include regular
                     font-size: $regular
                     color: $weak-text-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                     li
                         &:first-child
                             @include semiBold
                             font-size: 20px
                             color: $main-color
                             margin-bottom: 14px
+                            @media (max-width: 1280px)
+                                font-size: $medium-laptop
+            &__nav
+                display: flex
+                gap: 30px
+                width: 350px
             .socials
                 li
                     display: flex
                     gap: 14px
+                    @media (max-width: 767px)
+                        gap: 10px
                     img
                         padding: 14px
                         background-color: $bg-color
@@ -600,11 +950,15 @@ footer
         background-color: $white-color
         display: flex
         justify-content: center
+        @media (max-width: 1280px)
+            margin: 30px auto
     .down
         display: flex
         justify-content: center
         align-items: center
         padding-bottom: 30px
+        @media (max-width: 1280px)
+            font-size: $btn-laptop
 // icons na socialni site a jine
 .icon
     width: 52px
@@ -646,8 +1000,11 @@ footer
         background: $second-color url("../socials/linkedInW.svg") no-repeat
         background-position: center
                               
-
-
+#dropdown
+    display: none
+    @media (max-width: 767px)
+        display: block
+        margin-left: 20px
                 
                     
 
