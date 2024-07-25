@@ -859,4 +859,14 @@ footer .down {
   footer .down {
     font-size: 14px;
   }
+}
+
+#dropdown {
+  display: none;
+}
+@media (max-width: 767px) {
+  #dropdown {
+    display: block;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=pricing.css.map */
