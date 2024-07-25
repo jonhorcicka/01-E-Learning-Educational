@@ -461,7 +461,7 @@ a {
 }
 @media (max-width: 1280px) {
   .signUp .right__form form .btnSignUp {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -505,7 +505,7 @@ a {
 }
 @media (max-width: 1280px) {
   .signUp .right__form .btnGoogle {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
