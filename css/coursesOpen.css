@@ -71,6 +71,37 @@ a {
   margin: 0 auto;
 }
 
+.banner {
+  max-width: 1860px;
+  width: 96%;
+  margin: 20px auto 0;
+  background-color: #FF9500;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 23px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+}
+.banner__text {
+  color: #fff;
+}
+.banner img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1280px) {
+  .banner {
+    font-size: 14px;
+  }
+  .banner img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -80,18 +111,43 @@ a {
   height: 100px;
   max-width: 1589px;
   width: 96%;
-  margin: 40px auto;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .navigation {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
 }
 .navigation .left {
   width: 869px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .navigation .left {
+    width: 30%;
+  }
+}
 .navigation .left .logo {
   margin-right: 50px;
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 1280px) {
+  .navigation .left .logo {
+    width: 44px;
+    height: 44px;
+  }
 }
 .navigation .left__nav {
   display: flex;
+}
+@media (max-width: 767px) {
+  .navigation .left__nav {
+    display: none;
+  }
 }
 .navigation .left .navmenu {
   padding: 17px 24px;
@@ -119,6 +175,19 @@ a {
   align-items: center;
   background-color: #F1F1F3;
 }
+@media (max-width: 1280px) {
+  .navigation .right__btn .navbtn {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
+}
+@media (max-width: 767px) {
+  .navigation .right__btn .navbtn {
+    padding: 12px 20px;
+    height: 100%;
+  }
+}
 .navigation .right__btn .navbtn:hover {
   background-color: #FF9500;
   cursor: pointer;
@@ -136,6 +205,13 @@ a {
   justify-content: space-between;
   margin-bottom: 100px;
 }
+@media (max-width: 767px) {
+  .coursesOpen__text {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+}
 .coursesOpen__text h1 {
   display: flex;
   width: 50%;
@@ -143,6 +219,17 @@ a {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
   font-size: 48px;
+}
+@media (max-width: 1280px) {
+  .coursesOpen__text h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .coursesOpen__text h1 {
+    font-size: 28px;
+    width: 100%;
+  }
 }
 .coursesOpen__text p {
   width: 50%;
@@ -152,6 +239,17 @@ a {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  .coursesOpen__text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .coursesOpen__text p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
 .coursesOpen__cards {
   margin: 100px 0 120px;
   display: grid;
@@ -159,10 +257,21 @@ a {
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
 }
+@media (max-width: 767px) {
+  .coursesOpen__cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 0;
+  }
+}
 .coursesOpen__cards .card {
   padding: 50px;
   background-color: #fff;
   border-radius: 12px;
+}
+@media (max-width: 767px) {
+  .coursesOpen__cards .card {
+    padding: 30px;
+  }
 }
 .coursesOpen__cards .card__up {
   display: flex;
@@ -176,11 +285,33 @@ a {
   justify-content: flex-end;
   margin-bottom: 50px;
 }
+@media (max-width: 1280px) {
+  .coursesOpen__cards .card__up .number {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .coursesOpen__cards .card__up .number {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+}
 .coursesOpen__cards .card__up .text {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 50px;
+}
+@media (max-width: 1280px) {
+  .coursesOpen__cards .card__up .text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .coursesOpen__cards .card__up .text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 .coursesOpen__cards .card__mid {
   border: 1px solid #F1F1F3;
@@ -197,11 +328,23 @@ a {
 .coursesOpen__cards .card__mid:hover:hover .time {
   background-color: #FFD599;
 }
+@media (max-width: 767px) {
+  .coursesOpen__cards .card__mid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
 .coursesOpen__cards .card__mid .mainText {
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 6px;
+}
+@media (max-width: 1280px) {
+  .coursesOpen__cards .card__mid .mainText {
+    font-size: 16px;
+  }
 }
 .coursesOpen__cards .card__mid .text {
   font-family: "Be Vietnam Pro Regular", sans-serif;
@@ -209,8 +352,18 @@ a {
   font-size: 18px;
   color: #59595A;
 }
+@media (max-width: 1280px) {
+  .coursesOpen__cards .card__mid .text {
+    font-size: 14px;
+  }
+}
 .coursesOpen__cards .card__mid .nameLesson {
   width: 68%;
+}
+@media (max-width: 767px) {
+  .coursesOpen__cards .card__mid .nameLesson {
+    width: 100%;
+  }
 }
 .coursesOpen__cards .card__mid .time {
   display: flex;
@@ -220,6 +373,11 @@ a {
   max-width: 153px;
   background-color: #F7F7F8;
   color: #59595A;
+}
+@media (max-width: 1280px) {
+  .coursesOpen__cards .card__mid .time {
+    font-size: 14px;
+  }
 }
 
 .icon {
@@ -260,15 +418,32 @@ a {
 
 footer {
   background-color: #fff;
-  margin: 100px auto 0;
+  margin: 150px auto 0;
+}
+@media (max-width: 767px) {
+  footer {
+    margin: 0 auto;
+  }
 }
 footer .up {
   max-width: 1590px;
   width: 96%;
-  padding: 100px 0 0 0;
+  padding: 100px 0 0;
   background-color: #fff;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  footer .up {
+    padding: 60px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  footer .up {
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 0 0;
+  }
 }
 footer .up .left {
   width: 50%;
@@ -284,6 +459,16 @@ footer .up .left ul {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  footer .up .left ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .left ul {
+    font-size: 15px;
+  }
+}
 footer .up .left ul li {
   display: flex;
   gap: 6px;
@@ -295,6 +480,13 @@ footer .up .right {
   gap: 30px;
   justify-content: space-around;
 }
+@media (max-width: 767px) {
+  footer .up .right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
   display: flex;
   flex-direction: column;
@@ -304,6 +496,16 @@ footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .so
   font-size: 18px;
   color: #59595A;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 14px;
+  }
+}
 footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
@@ -311,9 +513,24 @@ footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:firs
   color: #262626;
   margin-bottom: 14px;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
+    font-size: 18px;
+  }
+}
+footer .up .right__nav {
+  display: flex;
+  gap: 30px;
+  width: 350px;
+}
 footer .up .right .socials li {
   display: flex;
   gap: 14px;
+}
+@media (max-width: 767px) {
+  footer .up .right .socials li {
+    gap: 10px;
+  }
 }
 footer .up .right .socials li img {
   padding: 14px;
@@ -331,9 +548,29 @@ footer .space {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1280px) {
+  footer .space {
+    margin: 30px auto;
+  }
+}
 footer .down {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+}
+@media (max-width: 1280px) {
+  footer .down {
+    font-size: 14px;
+  }
+}
+
+#dropdown {
+  display: none;
+}
+@media (max-width: 767px) {
+  #dropdown {
+    display: block;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=coursesOpen.css.map */
