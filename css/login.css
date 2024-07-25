@@ -200,6 +200,14 @@ a {
   gap: 100px;
   max-height: 997px;
 }
+@media (max-width: 767px) {
+  .login {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    max-height: 100%;
+    gap: 50px;
+  }
+}
 .login .left {
   display: flex;
   flex-direction: column;
@@ -213,11 +221,32 @@ a {
   font-size: 38px;
   margin-bottom: 6px;
 }
+@media (max-width: 1280px) {
+  .login .left__one h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .login .left__one h2 {
+    font-size: 24px;
+  }
+}
 .login .left__one p {
   font-family: "Be Vietnam Pro Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 80px;
+}
+@media (max-width: 1280px) {
+  .login .left__one p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .left__one p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
 }
 .login .left__two {
   margin-bottom: 30px;
@@ -234,11 +263,27 @@ a {
   background-color: #fff;
   padding: 50px;
 }
+@media (max-width: 1280px) {
+  .login .left__two-text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .left__two-text p {
+    font-size: 14px;
+    padding: 30px;
+  }
+}
 .login .left__two-authors {
   display: flex;
   justify-content: space-between;
   padding: 30px 50px;
   background-color: #FCFCFD;
+}
+@media (max-width: 767px) {
+  .login .left__two-authors {
+    padding: 20px 30px;
+  }
 }
 .login .left__two-authors p {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
@@ -247,6 +292,16 @@ a {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+@media (max-width: 1280px) {
+  .login .left__two-authors p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .left__two-authors p {
+    font-size: 14px;
+  }
 }
 .login .left__two-authors p img {
   border-radius: 8px;
@@ -257,6 +312,12 @@ a {
   border-radius: 8px;
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .login .left__two-authors .btn {
+    padding: 14px 16px;
+  }
 }
 .login .left__two-authors .btn:hover {
   background-color: #FF9500;
@@ -268,6 +329,12 @@ a {
   gap: 15px;
   width: 100%;
   margin-bottom: 202px;
+}
+@media (max-width: 767px) {
+  .login .left__arrows {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 .login .left__arrows img {
   padding: 14px;
@@ -288,6 +355,11 @@ a {
   border-radius: 12px;
   width: 660px;
 }
+@media (max-width: 767px) {
+  .login .right {
+    max-width: 100%;
+  }
+}
 .login .right__text {
   display: flex;
   flex-direction: column;
@@ -300,11 +372,31 @@ a {
   color: #262626;
   margin-bottom: 12px;
 }
+@media (max-width: 1280px) {
+  .login .right__text h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__text h1 {
+    font-size: 28px;
+  }
+}
 .login .right__text p {
   font-family: "Be Vietnam Pro Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #4C4C4D;
+}
+@media (max-width: 1280px) {
+  .login .right__text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__text p {
+    font-size: 14px;
+  }
 }
 .login .right__form form {
   display: flex;
@@ -316,6 +408,16 @@ a {
   font-weight: 500;
   font-size: 18px;
   color: #262626;
+}
+@media (max-width: 1280px) {
+  .login .right__form form .nameText {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__form form .nameText {
+    font-size: 14px;
+  }
 }
 .login .right__form form .namePole {
   margin-bottom: 24px;
@@ -336,6 +438,11 @@ a {
   width: 460px;
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .login .right__form form .checkbox {
+    width: 100%;
+  }
+}
 .login .right__form form .checkbox .check {
   width: 30px;
   height: 30px;
@@ -347,6 +454,16 @@ a {
   font-weight: 400;
   font-size: 18px;
   color: #59595A;
+}
+@media (max-width: 1280px) {
+  .login .right__form form .checkbox .checkText {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__form form .checkbox .checkText {
+    font-size: 14px;
+  }
 }
 .login .right__form form .checkbox .checkText a {
   color: #59595A;
@@ -361,6 +478,16 @@ a {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 24px;
+}
+@media (max-width: 1280px) {
+  .login .right__form form .btnSignUp {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__form form .btnSignUp {
+    font-size: 14px;
+  }
 }
 .login .right__form form .btnSignUp:hover {
   color: #F1F1F3;
@@ -396,6 +523,16 @@ a {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+@media (max-width: 1280px) {
+  .login .right__form .btnGoogle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__form .btnGoogle {
+    font-size: 14px;
+  }
+}
 .login .right__form .btnGoogle:hover {
   color: #F1F1F3;
   background-color: #FF9500;
@@ -406,6 +543,16 @@ a {
   align-items: center;
   gap: 6px;
 }
+@media (max-width: 1280px) {
+  .login .right__form p, .login .right__form a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .login .right__form p, .login .right__form a {
+    font-size: 14px;
+  }
+}
 .login .right__form p a, .login .right__form a a {
   text-decoration: underline;
   color: #4C4C4D;
@@ -415,13 +562,30 @@ footer {
   background-color: #fff;
   margin: 150px auto 0;
 }
+@media (max-width: 767px) {
+  footer {
+    margin: 0 auto;
+  }
+}
 footer .up {
   max-width: 1590px;
   width: 96%;
-  padding: 100px 0 0 0;
+  padding: 100px 0 0;
   background-color: #fff;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  footer .up {
+    padding: 60px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  footer .up {
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 0 0;
+  }
 }
 footer .up .left {
   width: 50%;
@@ -437,6 +601,16 @@ footer .up .left ul {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  footer .up .left ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .left ul {
+    font-size: 15px;
+  }
+}
 footer .up .left ul li {
   display: flex;
   gap: 6px;
@@ -448,6 +622,13 @@ footer .up .right {
   gap: 30px;
   justify-content: space-around;
 }
+@media (max-width: 767px) {
+  footer .up .right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
   display: flex;
   flex-direction: column;
@@ -457,6 +638,16 @@ footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .so
   font-size: 18px;
   color: #59595A;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 14px;
+  }
+}
 footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
@@ -464,9 +655,24 @@ footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:firs
   color: #262626;
   margin-bottom: 14px;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
+    font-size: 18px;
+  }
+}
+footer .up .right__nav {
+  display: flex;
+  gap: 30px;
+  width: 350px;
+}
 footer .up .right .socials li {
   display: flex;
   gap: 14px;
+}
+@media (max-width: 767px) {
+  footer .up .right .socials li {
+    gap: 10px;
+  }
 }
 footer .up .right .socials li img {
   padding: 14px;
@@ -484,11 +690,21 @@ footer .space {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1280px) {
+  footer .space {
+    margin: 30px auto;
+  }
+}
 footer .down {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+}
+@media (max-width: 1280px) {
+  footer .down {
+    font-size: 14px;
+  }
 }
 
 .icon {

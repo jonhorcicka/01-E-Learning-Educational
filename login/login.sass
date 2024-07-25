@@ -122,6 +122,11 @@ a
     margin: 0 auto
     gap: 100px
     max-height: 997px
+    @media (max-width: 767px)
+        flex-direction: column-reverse
+        max-width: 100%
+        max-height: 100%
+        gap: 50px
     .left
         display: flex
         flex-direction: column
@@ -133,10 +138,19 @@ a
                 @include medium
                 font-size: $h2-font-size
                 margin-bottom: 6px
+                @media (max-width: 1280px)
+                    font-size: 30px
+                @media (max-width: 767px)
+                    font-size: $h2-font-size-mobile
             p
                 @include regular
                 font-size: $regular
                 margin-bottom: 80px
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
+                    margin-bottom: 40px
         &__two
             margin-bottom: 30px
             &-text
@@ -148,17 +162,28 @@ a
                     color: $text-color
                     background-color: $absolute-white
                     padding: 50px
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
+                        padding: 30px
             &-authors
                 display: flex
                 justify-content: space-between
                 padding: 30px 50px
                 background-color: $bg-btn-color
+                @media (max-width: 767px)
+                    padding: 20px 30px
                 p
                     @include semiBold
                     font-size: $regular
                     display: flex
                     align-items: center
                     gap: 15px
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                     img
                         border-radius: 8px
                 .btn
@@ -166,6 +191,10 @@ a
                     padding: 18px 24px
                     border-radius: 8px
                     @include medium
+                    @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @media (max-width: 767px)
+                        padding: 14px 16px
                     &:hover
                         background-color: $second-color
                         color: $absolute-white
@@ -175,6 +204,9 @@ a
             gap: 15px
             width: 100%
             margin-bottom: 202px
+            @media (max-width: 767px)
+                margin-bottom: 50px
+                justify-content: center
             img
                 padding: 14px
                 background-color: $absolute-white
@@ -182,7 +214,6 @@ a
                 &:hover
                     background-color: $second-color
                     cursor: pointer
-
     .right
         margin: 0 auto 
         display: flex
@@ -192,6 +223,8 @@ a
         padding: 50px
         border-radius: 12px
         width: 660px
+        @media (max-width: 767px)
+            max-width: 100%
         &__text
             display: flex
             flex-direction: column
@@ -201,10 +234,18 @@ a
                 font-size: $h1-font-size
                 color: $main-color
                 margin-bottom: 12px
+                @media (max-width: 1280px)
+                    font-size: $h1-font-size-laptop
+                @media (max-width: 767px)
+                    font-size: $h1-font-size-mobile
             p
                 @include regular
                 font-size: $regular
                 color: $text-color
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
         &__form
             form
                 display: flex
@@ -214,6 +255,10 @@ a
                     @include medium
                     font-size: $regular
                     color: $main-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                 .namePole
                     margin-bottom: 24px
                     padding: 24px
@@ -232,6 +277,8 @@ a
                     gap: 8px
                     width: 460px
                     margin-bottom: 20px
+                    @media (max-width: 767px)
+                        width: 100%
                     .check
                         width: 30px
                         height: 30px
@@ -241,7 +288,10 @@ a
                         @include regular
                         font-size: $regular
                         color: $weak-text-color
-                        
+                        @media (max-width: 1280px)
+                            font-size: $regular-laptop
+                        @media (max-width: 767px)
+                            font-size: $regular-mobile
                         a
                             color: $weak-text-color
                             text-decoration: underline
@@ -253,6 +303,10 @@ a
                     @include medium
                     font-size: $regular
                     margin-bottom: 24px
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                     &:hover
                         color: $white-color
                         background-color: $second-color
@@ -280,6 +334,10 @@ a
                 font-size: $regular
                 border-radius: 10px
                 margin-bottom: 30px
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
                 &:hover
                     color: $white-color
                     background-color: $second-color
@@ -288,6 +346,10 @@ a
                 justify-content: center
                 align-items: center
                 gap: 6px
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
                 a
                     text-decoration: underline
                     color: $text-color
@@ -295,13 +357,21 @@ a
 footer
     background-color: $absolute-white
     margin: 150px auto 0
+    @media (max-width: 767px)
+        margin: 0 auto
     .up
         max-width: 1590px
         width: 96%
-        padding: 100px 0 0 0
+        padding: 100px 0 0 
         background-color: $absolute-white
         display: flex
         margin: 0 auto
+        @media (max-width: 1280px)
+            padding: 60px 0 0 0 
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 24px
+            padding: 50px 0 0 
         .left
             width: 50%
             .webLogo
@@ -312,6 +382,10 @@ footer
                 gap: 20px
                 @include regular
                 font-size: $regular
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $footer-mobile
                 li
                     display: flex
                     gap: 6px
@@ -321,6 +395,10 @@ footer
             display: flex
             gap: 30px
             justify-content: space-around
+            @media (max-width: 767px)
+                display: flex
+                flex-direction: column
+                gap: 24px
             .home, .aboutUs, .socials
                 ul
                     display: flex
@@ -329,16 +407,28 @@ footer
                     @include regular
                     font-size: $regular
                     color: $weak-text-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                     li
                         &:first-child
                             @include semiBold
                             font-size: 20px
                             color: $main-color
                             margin-bottom: 14px
+                            @media (max-width: 1280px)
+                                font-size: $medium-laptop
+            &__nav
+                display: flex
+                gap: 30px
+                width: 350px
             .socials
                 li
                     display: flex
                     gap: 14px
+                    @media (max-width: 767px)
+                        gap: 10px
                     img
                         padding: 14px
                         background-color: $bg-color
@@ -352,11 +442,15 @@ footer
         background-color: $white-color
         display: flex
         justify-content: center
+        @media (max-width: 1280px)
+            margin: 30px auto
     .down
         display: flex
         justify-content: center
         align-items: center
         padding-bottom: 30px
+        @media (max-width: 1280px)
+            font-size: $btn-laptop
 // icons na socialni site a jine
 .icon
     width: 52px

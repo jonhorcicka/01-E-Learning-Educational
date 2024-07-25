@@ -206,6 +206,7 @@ a
             margin-bottom: 202px
             @media (max-width: 767px)
                 margin-bottom: 50px
+                justify-content: center
             img
                 padding: 14px
                 background-color: $absolute-white
@@ -446,7 +447,46 @@ footer
         padding-bottom: 30px
         @media (max-width: 1280px)
             font-size: $btn-laptop
-
+// icons na socialni site a jine
+.icon
+    width: 52px
+    height: 52px
+    cursor: pointer
+.arrowLeft
+    background: $absolute-white url("../icons/vectorLeftSu.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../icons/vectorLeftSuW.svg") no-repeat
+        background-position: center
+.arrowRight
+    background: $absolute-white url("../icons/vectorRightSu.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../icons/vectorRightSuW.svg") no-repeat
+        background-position: center
+.fb
+    background: $white-color url("../socials/fb.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/fbW.svg") no-repeat
+        background-position: center
+.tt
+    background: $white-color url("../socials/tt.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/ttW.svg") no-repeat
+        background-position: center
+.linkedIn
+    background: $white-color url("../socials/linkedIn.svg") no-repeat
+    background-position: center
+    border-radius: 8px
+    &:hover
+        background: $second-color url("../socials/linkedInW.svg") no-repeat
+        background-position: center
 #dropdown
     display: none
     @media (max-width: 767px)
