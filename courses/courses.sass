@@ -31,6 +31,29 @@ a
     max-width: 1596px
     width: 96%
     margin: 0 auto
+// Banner
+.banner
+    max-width: 1860px
+    width: 96%
+    margin: 20px auto 0
+    background-color: $second-color
+    height: 55px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 8px
+    gap: 23px
+    @include regular
+    &__text
+        color: $absolute-white
+    img
+        width: 24px
+        height: 24px
+    @media (max-width: 1280px)
+        font-size: $btn-laptop
+        img
+            width: 20px
+            height: 20px
 // Navigation bar
 .navigation
     display: flex
@@ -41,15 +64,27 @@ a
     height: 100px
     max-width: 1589px
     width: 96%
-    margin: 40px auto
+    margin: 0 auto
+    @media (max-width: 1280px)
+        font-size: $btn-laptop
+        @include regular     
     .left
         width: 869px
         display: flex
         align-items: center
+        @media (max-width: 767px)
+                 width: 30% 
         .logo
             margin-right: 50px
+            width: 54px
+            height: 54px
+            @media (max-width: 1280px)
+                width: 44px
+                height: 44px
         &__nav
             display: flex
+            @media (max-width: 767px)
+                display: none    
         .navmenu
             padding: 17px 24px
             border-radius: 8px
@@ -58,7 +93,7 @@ a
             &:hover
                 background-color: $second-color
                 cursor: pointer
-                color: #fff 
+                color: #fff
     .right
         display: flex
         align-items: center
@@ -71,6 +106,12 @@ a
                 border-radius: 8px
                 align-items: center
                 background-color: $white-color
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
+                    @include regular
+                @media (max-width: 767px)
+                    padding: 12px 20px
+                    height: 100%
                 &:hover
                     background-color: $second-color
                     cursor: pointer
@@ -86,22 +127,42 @@ a
         width: 100%
         justify-content: space-between
         margin-bottom: 100px
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 16px
+            margin-bottom: 50px
         h1
             display: flex
             width: 50%
             align-items: center
             @include semiBold
             font-size: $h1-font-size
+            @media (max-width: 1280px)
+                font-size: $h1-font-size-laptop
+            @media (max-width: 767px)
+                font-size: $h1-font-size-mobile
+                width: 60%
         p
             width: 50%
             padding-right: 6.94438vw
             color: $weak-text-color
             @include regular
             font-size: $regular
+            @media (max-width: 1280px)
+                font-size: $regular-laptop
+            @media (max-width: 767px)
+                font-size: $regular-mobile
+                width: 100%
     &__card
         background-color: $absolute-white
         padding: 50px
         margin-bottom: 50px
+        @media (max-width: 1280px)
+            padding: 40px
+            margin-bottom: 40px
+        @media (max-width: 767px)
+            padding: 24px
+            margin-bottom: 20px
         &-text
             display: flex
             gap: 50px
@@ -114,15 +175,25 @@ a
                     @include semiBold
                     font-size: $semi-bold
                     margin-bottom: 10px
+                    @media (max-width: 1280px)
+                        font-size: $semi-bold-laptop
+                    @media (max-width: 767px)
+                        font-size: $medium-mobile
                 .secondText
                     @include regular
                     font-size: $regular
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
             .view
                 display: flex
                 justify-content: center
                 align-items: center
                 @include medium
                 font-size: $regular
+                @media (max-width: 1280px)
+                    font-size: $btn-laptop
                 a
                     color: $main-color
                     padding: 18px 24px
@@ -150,9 +221,17 @@ a
                     border-radius: 8px
                     color: $weak-text-color
                     @include regular
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
             .author
                 font-size: 20px
                 @include medium
+                @media (max-width: 1280px)
+                    font-size: $medium-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile2
         &-program
             display: flex
             flex-direction: column
@@ -160,10 +239,17 @@ a
                 border: 1px solid $white-color
                 padding: 24px 30px
                 border-radius: 10px 10px 0 0
+                @include semiBold
+                @media (max-width: 1280px)
+                        font-size: $medium-laptop
+                @media (max-width: 767px)
+                        font-size: $regular-mobile2
             .body
                 display: flex
                 border: 1px solid $white-color
                 border-radius: 0 0 10px 10px
+                @media (max-width: 767px)
+                    flex-direction: column
                 .main
                     padding: 30px 0
                     width: 20%
@@ -174,12 +260,29 @@ a
                         display: flex
                         flex-direction: column
                         gap: 20px
+                        @media (max-width: 767px)
+                            padding: 0 0 24px
+                            width: 262px
+                            border-bottom: 1px solid $white-color
+                            border-right: 0
+                            display: flex
+                            flex-direction: column
+                            margin: 0 24px
+                            gap: 12px
                         .mainText
                             @include bold
                             font-size: $bold
+                            @media (max-width: 1280px)
+                                font-size: 40px
+                            @media (max-width: 767px)
+                                font-size: 30px
                         .secondText
                             @include medium
                             font-size: $regular
+                            @media (max-width: 1280px)
+                                font-size: $regular-laptop
+                            @media (max-width: 767px)
+                                font-size: $regular-mobile
 // ikony
 .icon
     width: 52px
@@ -209,14 +312,22 @@ a
 // Footer section
 footer
     background-color: $absolute-white
-    margin: 100px auto 0
+    margin: 150px auto 0
+    @media (max-width: 767px)
+        margin: 0 auto
     .up
         max-width: 1590px
         width: 96%
-        padding: 100px 0 0 0
+        padding: 100px 0 0 
         background-color: $absolute-white
         display: flex
         margin: 0 auto
+        @media (max-width: 1280px)
+            padding: 60px 0 0 0 
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 24px
+            padding: 50px 0 0 
         .left
             width: 50%
             .webLogo
@@ -227,6 +338,10 @@ footer
                 gap: 20px
                 @include regular
                 font-size: $regular
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $footer-mobile
                 li
                     display: flex
                     gap: 6px
@@ -236,6 +351,10 @@ footer
             display: flex
             gap: 30px
             justify-content: space-around
+            @media (max-width: 767px)
+                display: flex
+                flex-direction: column
+                gap: 24px
             .home, .aboutUs, .socials
                 ul
                     display: flex
@@ -244,16 +363,28 @@ footer
                     @include regular
                     font-size: $regular
                     color: $weak-text-color
+                    @media (max-width: 1280px)
+                        font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                     li
                         &:first-child
                             @include semiBold
                             font-size: 20px
                             color: $main-color
                             margin-bottom: 14px
+                            @media (max-width: 1280px)
+                                font-size: $medium-laptop
+            &__nav
+                display: flex
+                gap: 30px
+                width: 350px
             .socials
                 li
                     display: flex
                     gap: 14px
+                    @media (max-width: 767px)
+                        gap: 10px
                     img
                         padding: 14px
                         background-color: $bg-color
@@ -267,11 +398,21 @@ footer
         background-color: $white-color
         display: flex
         justify-content: center
+        @media (max-width: 1280px)
+            margin: 30px auto
     .down
         display: flex
         justify-content: center
         align-items: center
         padding-bottom: 30px
+        @media (max-width: 1280px)
+            font-size: $btn-laptop
+#dropdown
+    display: none
+    @media (max-width: 767px)
+        display: block
+        margin-left: 20px
+                
                         
 
                 
