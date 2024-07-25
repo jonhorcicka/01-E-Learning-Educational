@@ -71,6 +71,37 @@ a {
   margin: 0 auto;
 }
 
+.banner {
+  max-width: 1860px;
+  width: 96%;
+  margin: 20px auto 0;
+  background-color: #FF9500;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 23px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+}
+.banner__text {
+  color: #fff;
+}
+.banner img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1280px) {
+  .banner {
+    font-size: 14px;
+  }
+  .banner img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -80,18 +111,43 @@ a {
   height: 100px;
   max-width: 1589px;
   width: 96%;
-  margin: 40px auto;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .navigation {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
 }
 .navigation .left {
   width: 869px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .navigation .left {
+    width: 30%;
+  }
+}
 .navigation .left .logo {
   margin-right: 50px;
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 1280px) {
+  .navigation .left .logo {
+    width: 44px;
+    height: 44px;
+  }
 }
 .navigation .left__nav {
   display: flex;
+}
+@media (max-width: 767px) {
+  .navigation .left__nav {
+    display: none;
+  }
 }
 .navigation .left .navmenu {
   padding: 17px 24px;
@@ -119,6 +175,19 @@ a {
   align-items: center;
   background-color: #F1F1F3;
 }
+@media (max-width: 1280px) {
+  .navigation .right__btn .navbtn {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
+}
+@media (max-width: 767px) {
+  .navigation .right__btn .navbtn {
+    padding: 12px 20px;
+    height: 100%;
+  }
+}
 .navigation .right__btn .navbtn:hover {
   background-color: #FF9500;
   cursor: pointer;
@@ -135,6 +204,13 @@ a {
   width: 100%;
   margin-bottom: 100px;
 }
+@media (max-width: 767px) {
+  .aboutUs__text {
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 16px;
+  }
+}
 .aboutUs__text h1 {
   display: flex;
   width: 50%;
@@ -142,6 +218,17 @@ a {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
   font-weight: 600;
   font-size: 48px;
+}
+@media (max-width: 1280px) {
+  .aboutUs__text h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs__text h1 {
+    font-size: 28px;
+    width: 100%;
+  }
 }
 .aboutUs__text p {
   width: 50%;
@@ -151,17 +238,53 @@ a {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  .aboutUs__text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs__text p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
 .aboutUs__textOne {
   margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .aboutUs__textOne {
+    margin-bottom: 50px;
+  }
 }
 .aboutUs__textOne h1 {
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
   font-size: 48px;
 }
+@media (max-width: 1280px) {
+  .aboutUs__textOne h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs__textOne h1 {
+    font-size: 28px;
+  }
+}
 .aboutUs__textOne p {
   color: #59595A;
   font-size: 18px;
+}
+@media (max-width: 1280px) {
+  .aboutUs__textOne p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs__textOne p {
+    font-size: 14px;
+  }
 }
 .aboutUs__cards {
   margin: 0 0 177px;
@@ -173,10 +296,21 @@ a {
 .aboutUs__cards:last-child {
   margin: 0 0 80px;
 }
+@media (max-width: 767px) {
+  .aboutUs__cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 50px;
+  }
+}
 .aboutUs__cards .card {
   padding: 50px;
   background-color: #fff;
   border-radius: 12px;
+}
+@media (max-width: 767px) {
+  .aboutUs__cards .card {
+    padding: 30px;
+  }
 }
 .aboutUs__cards .card img {
   padding: 16px;
@@ -191,11 +325,31 @@ a {
   margin-bottom: 14px;
   color: #262626;
 }
+@media (max-width: 1280px) {
+  .aboutUs__cards .card h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs__cards .card h3 {
+    font-size: 18px;
+  }
+}
 .aboutUs__cards .card p {
   font-family: "Be Vietnam Pro Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #59595A;
+}
+@media (max-width: 1280px) {
+  .aboutUs__cards .card p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs__cards .card p {
+    font-size: 14px;
+  }
 }
 .aboutUs .together {
   background-color: #fff;
@@ -208,10 +362,26 @@ a {
   background: #fff url("../icons/aboutUs/shape-17.png") no-repeat;
   background-position: 81% center;
 }
+@media (max-width: 767px) {
+  .aboutUs .together {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    margin-bottom: 50px;
+    height: 100%;
+    background-position: 130% 180%;
+    background-size: 235px;
+  }
+}
 .aboutUs .together__text {
   display: flex;
   flex-direction: column;
   width: 70%;
+}
+@media (max-width: 767px) {
+  .aboutUs .together__text {
+    width: 100%;
+  }
 }
 .aboutUs .together__text h1 {
   font-size: 48px;
@@ -219,8 +389,31 @@ a {
   font-weight: 600;
   margin-bottom: 20px;
 }
+@media (max-width: 1280px) {
+  .aboutUs .together__text h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs .together__text h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
 .aboutUs .together__text span {
   color: #FF9500;
+}
+@media (max-width: 1280px) {
+  .aboutUs .together__text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs .together__text p {
+    font-size: 14px;
+    margin: 0 0 40px;
+    width: 90%;
+  }
 }
 .aboutUs .together__btn {
   display: flex;
@@ -230,6 +423,11 @@ a {
   padding: 18px 24px;
   border-radius: 8px;
   color: #262626;
+}
+@media (max-width: 1280px) {
+  .aboutUs .together__btn a {
+    font-size: 14px;
+  }
 }
 .aboutUs .together__btn a:hover {
   color: #fff;
@@ -274,15 +472,32 @@ a {
 
 footer {
   background-color: #fff;
-  margin: 100px auto 0;
+  margin: 150px auto 0;
+}
+@media (max-width: 767px) {
+  footer {
+    margin: 0 auto;
+  }
 }
 footer .up {
   max-width: 1590px;
   width: 96%;
-  padding: 100px 0 0 0;
+  padding: 100px 0 0;
   background-color: #fff;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  footer .up {
+    padding: 60px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  footer .up {
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 0 0;
+  }
 }
 footer .up .left {
   width: 50%;
@@ -298,6 +513,16 @@ footer .up .left ul {
   font-weight: 400;
   font-size: 18px;
 }
+@media (max-width: 1280px) {
+  footer .up .left ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .left ul {
+    font-size: 15px;
+  }
+}
 footer .up .left ul li {
   display: flex;
   gap: 6px;
@@ -309,6 +534,13 @@ footer .up .right {
   gap: 30px;
   justify-content: space-around;
 }
+@media (max-width: 767px) {
+  footer .up .right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
   display: flex;
   flex-direction: column;
@@ -317,6 +549,21 @@ footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .so
   font-weight: 400;
   font-size: 18px;
   color: #59595A;
+  cursor: pointer;
+  border-bottom: 0px;
+}
+footer .up .right .home ul:hover, footer .up .right .aboutUs ul:hover, footer .up .right .socials ul:hover {
+  transform: 2s linear 1px border-bottom #FF9500;
+}
+@media (max-width: 1280px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
+    font-size: 14px;
+  }
 }
 footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
   font-family: "Be Vietnam Pro SemiBold", sans-serif;
@@ -325,9 +572,24 @@ footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:firs
   color: #262626;
   margin-bottom: 14px;
 }
+@media (max-width: 1280px) {
+  footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
+    font-size: 18px;
+  }
+}
+footer .up .right__nav {
+  display: flex;
+  gap: 30px;
+  width: 350px;
+}
 footer .up .right .socials li {
   display: flex;
   gap: 14px;
+}
+@media (max-width: 767px) {
+  footer .up .right .socials li {
+    gap: 10px;
+  }
 }
 footer .up .right .socials li img {
   padding: 14px;
@@ -345,9 +607,29 @@ footer .space {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1280px) {
+  footer .space {
+    margin: 30px auto;
+  }
+}
 footer .down {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+}
+@media (max-width: 1280px) {
+  footer .down {
+    font-size: 14px;
+  }
+}
+
+#dropdown {
+  display: none;
+}
+@media (max-width: 767px) {
+  #dropdown {
+    display: block;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=aboutUs.css.map */
