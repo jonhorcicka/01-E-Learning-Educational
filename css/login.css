@@ -71,6 +71,37 @@ a {
   margin: 0 auto;
 }
 
+.banner {
+  max-width: 1860px;
+  width: 96%;
+  margin: 20px auto 0;
+  background-color: #FF9500;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 23px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  font-weight: 400;
+}
+.banner__text {
+  color: #fff;
+}
+.banner img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1280px) {
+  .banner {
+    font-size: 14px;
+  }
+  .banner img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -80,18 +111,43 @@ a {
   height: 100px;
   max-width: 1589px;
   width: 96%;
-  margin: 40px auto;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .navigation {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
 }
 .navigation .left {
   width: 869px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .navigation .left {
+    width: 25%;
+  }
+}
 .navigation .left .logo {
   margin-right: 50px;
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 1280px) {
+  .navigation .left .logo {
+    width: 44px;
+    height: 44px;
+  }
 }
 .navigation .left__nav {
   display: flex;
+}
+@media (max-width: 767px) {
+  .navigation .left__nav {
+    display: none;
+  }
 }
 .navigation .left .navmenu {
   padding: 17px 24px;
@@ -118,6 +174,18 @@ a {
   border-radius: 8px;
   align-items: center;
   background-color: #F1F1F3;
+}
+@media (max-width: 1280px) {
+  .navigation .right__btn .navbtn {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro Regular", sans-serif;
+    font-weight: 400;
+  }
+}
+@media (max-width: 767px) {
+  .navigation .right__btn .navbtn {
+    padding: 12px 20px;
+  }
 }
 .navigation .right__btn .navbtn:hover {
   background-color: #FF9500;
@@ -477,4 +545,14 @@ footer .down {
 .linkedIn:hover {
   background: #FF9500 url("../socials/linkedInW.svg") no-repeat;
   background-position: center;
+}
+
+#dropdown {
+  display: none;
+}
+@media (max-width: 767px) {
+  #dropdown {
+    display: block;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=login.css.map */
