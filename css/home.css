@@ -127,7 +127,7 @@ a {
 }
 @media (max-width: 767px) {
   .navigation .left {
-    width: 50%;
+    width: 30%;
   }
 }
 .navigation .left .logo {
@@ -185,6 +185,7 @@ a {
 @media (max-width: 767px) {
   .navigation .right__btn .navbtn {
     padding: 12px 20px;
+    height: 100%;
   }
 }
 .navigation .right__btn .navbtn:hover {
@@ -1011,6 +1012,11 @@ a {
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 767px) {
+  .pricing__tabs .card {
+    padding: 20px;
+  }
+}
 .pricing__tabs .card .plan {
   background-color: #FFF9F0;
   max-width: 644px;
@@ -1115,6 +1121,14 @@ a {
     font-size: 14px;
   }
 }
+@media (max-width: 767px) {
+  .pricing__tabs .card .list__main {
+    margin: 0 20px;
+  }
+  .pricing__tabs .card .list__main:last-child {
+    margin-bottom: 40px;
+  }
+}
 .pricing__tabs .card .list__main img {
   background-color: #FFF4E5;
   padding: 6px;
@@ -1141,6 +1155,10 @@ a {
 @media (max-width: 1280px) {
   .pricing__tabs .card .list__main-nope {
     font-size: 14px;
+    margin: 0 20px;
+  }
+  .pricing__tabs .card .list__main-nope:last-child {
+    margin-bottom: 20px;
   }
 }
 .pricing__tabs .card .list__main-nope img {
@@ -1182,6 +1200,7 @@ a {
   display: flex;
   padding: 100px;
   margin-bottom: 142px;
+  border-radius: 12px;
 }
 @media (max-width: 767px) {
   .faq {
