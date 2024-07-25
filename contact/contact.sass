@@ -13,10 +13,6 @@ body,
 button
     font-family: $body-font
     font-size: $regular
-    @media (max-width: 1280px)
-        font-size: $regular-laptop
-    @media (max-width: 767px)
-        font-size: $regular-mobile
 img, 
 iframe
     max-width: 100%
@@ -122,6 +118,7 @@ a
                 font-size: $h1-font-size-laptop
             @media (max-width: 767px)
                 width: 100%
+                font-size: $h1-font-size-mobile
         p
             width: 50%
             padding-right: 6.94438vw
@@ -133,6 +130,7 @@ a
             @media (max-width: 767px)
                 width: 100%
                 padding-right: 0
+                font-size: $regular-mobile
     &__card
         background-color: $absolute-white
         border: 1px solid $white-color
@@ -166,6 +164,8 @@ a
                     color: $main-color
                     @media (max-width: 1280px)
                         font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                 .namePole
                     width: 100%
                     padding: 24px 20px
@@ -187,6 +187,8 @@ a
                     color: $main-color
                     @media (max-width: 1280px)
                         font-size: $regular-laptop
+                    @media (max-width: 767px)
+                        font-size: $regular-mobile
                 .namePole
                     width: 100%
                     padding: 24px 20px
@@ -235,6 +237,10 @@ a
                 padding: 30px
                 background-color: $bg-btn-color
                 border-radius: 8px
+                @media (max-width: 1280px)
+                    font-size: $regular-laptop
+                @media (max-width: 767px)
+                    font-size: $regular-mobile
                 // img
                 //     padding: 14px
                 //     background-color: $white-color
@@ -252,7 +258,6 @@ a
                     &:hover
                         background: $second-color url("../socials/mailW.svg") no-repeat
                         background-position: center
-
                 .phone
                     background: $white-color url("../socials/phone.svg") no-repeat
                     background-position: center
@@ -260,7 +265,6 @@ a
                     &:hover
                         background: $second-color url("../socials/phoneW.svg") no-repeat
                         background-position: center
-
                 .map
                     background: $white-color url("../socials/map.svg") no-repeat
                     background-position: center
