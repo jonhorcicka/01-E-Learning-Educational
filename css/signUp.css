@@ -635,6 +635,8 @@ footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .so
   font-weight: 400;
   font-size: 18px;
   color: #59595A;
+  cursor: pointer;
+  border-bottom: 0px;
 }
 @media (max-width: 1280px) {
   footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {
@@ -657,6 +659,25 @@ footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:firs
   footer .up .right .home ul li:first-child, footer .up .right .aboutUs ul li:first-child, footer .up .right .socials ul li:first-child {
     font-size: 18px;
   }
+}
+footer .up .right .home ul .cool-link, footer .up .right .aboutUs ul .cool-link, footer .up .right .socials ul .cool-link {
+  display: inline-block;
+  color: #59595A;
+  text-decoration: none !important;
+}
+footer .up .right .home ul .cool-link::after, footer .up .right .aboutUs ul .cool-link::after, footer .up .right .socials ul .cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF9500;
+  transition: width 0.3s;
+}
+footer .up .right .home ul .cool-link:hover::after, footer .up .right .aboutUs ul .cool-link:hover::after, footer .up .right .socials ul .cool-link:hover::after {
+  width: 100%;
+}
+footer .up .right .home ul .blck, footer .up .right .aboutUs ul .blck, footer .up .right .socials ul .blck {
+  color: #262626;
 }
 footer .up .right__nav {
   display: flex;

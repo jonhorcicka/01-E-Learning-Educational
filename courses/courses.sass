@@ -365,6 +365,8 @@ footer
                     @include regular
                     font-size: $regular
                     color: $weak-text-color
+                    cursor: pointer
+                    border-bottom: 0px
                     @media (max-width: 1280px)
                         font-size: $regular-laptop
                     @media (max-width: 767px)
@@ -377,6 +379,22 @@ footer
                             margin-bottom: 14px
                             @media (max-width: 1280px)
                                 font-size: $medium-laptop
+                    .cool-link
+                        display: inline-block
+                        color: $weak-text-color
+                        text-decoration: none !important
+                        &::after 
+                            content: ''
+                            display: block
+                            width: 0
+                            height: 2px
+                            background: $second-color
+                            transition: width .3s
+                        &:hover::after
+                            width: 100%
+                            //transition: width .3s;
+                    .blck
+                        color: $main-color
             &__nav
                 display: flex
                 gap: 30px
