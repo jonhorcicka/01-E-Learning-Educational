@@ -273,6 +273,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .courses__card-text {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+}
 .courses__card-text .text {
   width: 83%;
   margin-bottom: 30px;
@@ -324,7 +332,9 @@ a {
 .courses__card-text .view a {
   color: #262626;
   padding: 18px 24px;
-  background-color: #F1F1F3;
+  background-color: #FCFCFD;
+  border: 1px solid #F1F1F3;
+  border-radius: 6px;
 }
 .courses__card-text .view a:hover {
   background-color: #FF9500;
@@ -343,6 +353,13 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .courses__card-author {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
 }
 .courses__card-author .informacion {
   display: flex;
@@ -415,6 +432,16 @@ a {
 .courses__card-program .body .main {
   padding: 30px 0;
   width: 20%;
+}
+@media (max-width: 767px) {
+  .courses__card-program .body .main:last-child > .main-box {
+    border-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .courses__card-program .body .main {
+    padding: 10px 0;
+  }
 }
 .courses__card-program .body .main-box {
   border-right: 1px solid #F1F1F3;
