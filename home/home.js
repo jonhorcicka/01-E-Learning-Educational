@@ -35,7 +35,6 @@ function btnPlus(button){
 }
 let toggleBtn=true;
 function toggleListener(){
-    
     // toggleBtn?document.getElementById("btnPlusOne").addEventListener("click",toggleOpenAnswer) :document.getElementById("btnPlusOne").addEventListener("click",toggleCloseAnswer);
 if (toggleBtn) {
     document.getElementById("btnPlusOne").addEventListener("click",toggleOpenAnswer);
@@ -45,7 +44,6 @@ if (toggleBtn) {
     toggleBtn=!toggleBtn;
 }
 }
-
 function toggleOpenAnswer(){
     document.getElementById("one").style.display="block";
     console.log("click");
