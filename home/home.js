@@ -26,7 +26,35 @@ function togglePrice(){
     
     console.log("click");
 }
-
-
-
 // FAQ zobrazeni odpovedi
+let btnId
+function btnPlus(button){
+    btnId=document.getElementById(button)
+    console.log(button);
+    
+}
+let toggleBtn=true;
+function toggleListener(){
+    
+    // toggleBtn?document.getElementById("btnPlusOne").addEventListener("click",toggleOpenAnswer) :document.getElementById("btnPlusOne").addEventListener("click",toggleCloseAnswer);
+if (toggleBtn) {
+    document.getElementById("btnPlusOne").addEventListener("click",toggleOpenAnswer);
+    toggleBtn=!toggleBtn;
+}else{
+    document.getElementById("btnPlusOne").addEventListener("click",toggleCloseAnswer);
+    toggleBtn=!toggleBtn;
+}
+}
+
+function toggleOpenAnswer(){
+    document.getElementById("one").style.display="block";
+    console.log("click");
+   
+    
+}
+function toggleCloseAnswer(){
+    document.getElementById("one").style.display="none";
+    console.log("click close");
+    
+}
+toggleListener()
