@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- banner -->
-    <div class="banner">
-        <a class="banner__text" id="click" style="cursor: pointer;" target="_blank">Free Courses 🌟 Sale Ends Soon, Get It Now</a>
+    <div id="banner" class=" hidden">
+        <a class="banner__text" id="click" href="../pricing/pricing.html" style="cursor: pointer;" target="_blank">Free Courses 🌟 Sale Ends Soon, Get It Now</a>
         <img src="../icons/vectorRight.svg" alt="right">
     </div>
     <!-- hlavička -->
@@ -361,61 +361,108 @@
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                 </div>
                 <div class="textTwo">
-                    <p>Monthly</p>
-                    <p>Yearly</p>
+                    <button   onclick="togglePrice()" class="button">Monthly</button>
+                    <button   onclick="togglePrice()" class="button" >Yearly</button>
                 </div>
             </div>
             <div class="pricing__tabs">
-                <div class="card wow animate__animated animate__flipInY animate__slow">
-                   <div class="plan">
-                    <p>Free Plan</p>
-                   </div>
-                   <div class="price">
-                    <p><span>$0</span>/month</p>
-                   </div>
-                   <div class="list">
-                        <div class="name">
-                            <p>Available Features</p>
-                        </div>
-                        <div class="list__main">
-                            <img src="../icons/done.svg" alt="done">
-                            <p>Access to selected free courses.</p>
-                        </div>
-                        <div class="list__main">
-                            <img src="../icons/done.svg" alt="done">
-                            <p>Limited course materials and resources.</p>
-                        </div>
-                        <div class="list__main">
-                            <img src="../icons/done.svg" alt="done">
-                            <p>Basic community support.</p>
-                        </div>
-                        <div class="list__main">
-                            <img src="../icons/done.svg" alt="done">
-                            <p>No certification upon completion.</p>
-                        </div>
-                        <div class="list__main">
-                            <img src="../icons/done.svg" alt="done">
-                            <p>Ad-supported platform.</p>
-                        </div>
-                        <div class="list__main-nope">
-                            <img src="../icons/cancel.svg" alt="nope">
-                            <p>Access to exclusive Pro Plan community forums.</p>
-                        </div>
-                        <div class="list__main-nope">
-                            <img src="../icons/cancel.svg" alt="nope">
-                            <p>Early access to new courses and updates.</p>
-                        </div>
-                   </div>
-                   <button>
-                    Get Started
-                   </button>
+                <div id="montly">
+                    <div  class="card wow animate__animated animate__flipInY animate__slow">
+                       <div class="plan">
+                        <p>Free Plan</p>
+                       </div>
+                       <div class="price">
+                        <p><span>$0</span>/month</p>
+                       </div>
+                       <div class="list">
+                            <div class="name">
+                                <p>Available Features</p>
+                            </div>
+                            <div class="list__main">
+                                <img src="../icons/done.svg" alt="done">
+                                <p>Access to selected free courses.</p>
+                            </div>
+                            <div class="list__main">
+                                <img src="../icons/done.svg" alt="done">
+                                <p>Limited course materials and resources.</p>
+                            </div>
+                            <div class="list__main">
+                                <img src="../icons/done.svg" alt="done">
+                                <p>Basic community support.</p>
+                            </div>
+                            <div class="list__main">
+                                <img src="../icons/done.svg" alt="done">
+                                <p>No certification upon completion.</p>
+                            </div>
+                            <div class="list__main">
+                                <img src="../icons/done.svg" alt="done">
+                                <p>Ad-supported platform.</p>
+                            </div>
+                            <div class="list__main-nope">
+                                <img src="../icons/cancel.svg" alt="nope">
+                                <p>Access to exclusive Pro Plan community forums.</p>
+                            </div>
+                            <div class="list__main-nope">
+                                <img src="../icons/cancel.svg" alt="nope">
+                                <p>Early access to new courses and updates.</p>
+                            </div>
+                       </div>
+                       <button>
+                        Get Started
+                       </button>
+                    </div>
+                    <div  class="card wow animate__animated animate__flipInY animate__slower">
+                        <div class="plan">
+                            <p>Pro Plan</p>
+                           </div>
+                           <div class="price">
+                            <p><span>$79</span>/month</p>
+                           </div>
+                           <div class="list">
+                                <div class="name">
+                                    <p>Available Features</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Unlimited access to all courses.</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Unlimited course materials and resources.</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Priority support from instructors.</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Course completion certificates.</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Ad-free experience.</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Access to exclusive Pro Plan community forums.</p>
+                                </div>
+                                <div class="list__main">
+                                    <img src="../icons/done.svg" alt="done">
+                                    <p>Early access to new courses and updates.</p>
+                                </div>
+                           </div>
+                           <button>
+                            Get Started
+                           </button>
+                    </div>
                 </div>
-                <div class="card wow animate__animated animate__flipInY animate__slower">
+                <div id="yearly">
+                    <div id="oneYear" class="hidden">
                     <div class="plan">
                         <p>Pro Plan</p>
                        </div>
                        <div class="price">
-                        <p><span>$79</span>/month</p>
+                        <p><span>$790</span>/yearly</p>
                        </div>
                        <div class="list">
                             <div class="name">
@@ -453,8 +500,10 @@
                        <button>
                         Get Started
                        </button>
+                    </div>
                 </div>
             </div>
+            
         </section>
         <section id="faq" class="faq">
                 <div class="faq--left">
@@ -624,7 +673,7 @@
             <p>&copy;2023 Skillbridge. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="home.js"></script>
     <script src="../node_modules/wow.js/dist/wow.min.js"></script>
     <script>
         new WOW().init();
