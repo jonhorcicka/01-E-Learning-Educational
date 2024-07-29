@@ -328,6 +328,10 @@ a {
   font-family: "Be Vietnam Pro Medium", sans-serif;
   font-weight: 500;
 }
+.signUp .left__two-authors .btn:hover {
+  background-color: #FF9500;
+  color: #fff;
+}
 @media (max-width: 1280px) {
   .signUp .left__two-authors .btn {
     font-size: 14px;
@@ -339,6 +343,7 @@ a {
   gap: 15px;
   width: 100%;
   margin-bottom: 202px;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .signUp .left__arrows {
@@ -350,6 +355,10 @@ a {
   padding: 14px;
   background-color: #fff;
   border-radius: 8px;
+}
+.signUp .left__arrows img:hover {
+  background-color: #FF9500;
+  color: #fff;
 }
 .signUp .right {
   margin: 0 auto;

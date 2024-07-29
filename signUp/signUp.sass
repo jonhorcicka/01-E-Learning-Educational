@@ -195,6 +195,9 @@ a
                     background-color: $bg-color
                     padding: 18px 24px
                     border-radius: 8px
+                    &:hover
+                        background-color: $second-color
+                        color: $absolute-white
                     @include medium
                     @media (max-width: 1280px)
                         font-size: $btn-laptop
@@ -204,6 +207,7 @@ a
             gap: 15px
             width: 100%
             margin-bottom: 202px
+            cursor: pointer
             @media (max-width: 767px)
                 margin-bottom: 50px
                 justify-content: center
@@ -211,6 +215,9 @@ a
                 padding: 14px
                 background-color: $absolute-white
                 border-radius: 8px
+                &:hover
+                    background-color: $second-color
+                    color: $absolute-white
 
     .right
         margin: 0 auto 

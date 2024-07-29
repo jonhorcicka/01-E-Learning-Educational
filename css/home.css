@@ -770,19 +770,22 @@ a {
   display: inline-flex;
   width: 100%;
 }
-.courses__tabs .card .btn button {
+.courses__tabs .card .btn-enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 63px;
   width: 100%;
   border-radius: 8px;
+  color: #262626;
   background-color: #F1F1F3;
 }
-.courses__tabs .card .btn button:hover {
+.courses__tabs .card .btn-enter:hover {
   background-color: #FF9500;
   color: #fff;
-  cursor: pointer;
 }
 @media (max-width: 1280px) {
-  .courses__tabs .card .btn button {
+  .courses__tabs .card .btn-enter {
     font-family: "Be Vietnam Pro Medium", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -1519,6 +1522,8 @@ footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .so
   font-weight: 400;
   font-size: 18px;
   color: #59595A;
+  cursor: pointer;
+  border-bottom: 0px;
 }
 @media (max-width: 1280px) {
   footer .up .right .home ul, footer .up .right .aboutUs ul, footer .up .right .socials ul {

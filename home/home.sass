@@ -483,15 +483,18 @@ a
             .btn
                 display: inline-flex
                 width: 100%
-                button
+                &-enter
+                    display: flex
+                    justify-content: center
+                    align-items: center
                     height: 63px
                     width: 100%
                     border-radius: 8px
+                    color: $main-color
                     background-color: $white-color
                     &:hover
                         background-color: $second-color
                         color: $absolute-white
-                        cursor: pointer
                     @media (max-width: 1280px)
                         @include medium
                         font-size: $btn-laptop
@@ -956,6 +959,8 @@ footer
                     @include regular
                     font-size: $regular
                     color: $weak-text-color
+                    cursor: pointer
+                    border-bottom: 0px
                     @media (max-width: 1280px)
                         font-size: $regular-laptop
                     @media (max-width: 767px)
